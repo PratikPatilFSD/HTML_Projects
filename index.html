@@ -61,6 +61,12 @@
             border-width: 3px;
         }
 
+        .second-row-td-two {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+        }
+
         /*third row*/
         .third-row {
             height: 500px;
@@ -82,6 +88,17 @@
 
         /*fourth row first column*/
         .fourth-row-td-one {
+            border-style: solid;
+            border-color: black;
+            border-width: 3px;
+        }
+
+        .second-table {
+            width: 100%;
+            height: 100%;
+        }
+
+        .second-table-td {
             border-style: solid;
             border-color: black;
             border-width: 3px;
@@ -121,19 +138,21 @@
         </tr>
         <!--first row-->
         <tr class="second-row">
-            <td colspan="4" class="second-row-td-one" id="home">
+            <td colspan="3" class="second-row-td-one" id="home">
                 <h1>My name is Pratik Patil.</h1>
                 <h3>I am a Full-Stack Developer.</h3>
             </td>
+            <td class="second-row-td-two"><img src="./assets/images/photo.jpg" width="200px" alt="My photo"></td>
 
         <tr>
-            <!--second row-->
+            <!--third row-->
         <tr class="third-row">
             <td colspan="4" class="third-row-td-one" id="about">
                 <h1>About</h1>
-                <h3>My aim is to obtain an entry-level position as a full scale developer that will allow me to utilise my coding
+                <h3>My aim is to obtain an entry-level position as a full scale developer that will allow me to utilise
+                    my coding
                     skills and to create user friendly web sites.</h3>
-                <h3>I am passionate about web development. </h3>    
+                <h3>I am passionate about web development.</h3>
             </td>
 
         </tr>
@@ -141,24 +160,53 @@
         <tr class="fourth-row">
             <td colspan="4" class="fourth-row-td-one" id="projects">
                 <h1>Projects</h1>
-                <u>
-                    <h3>My HTML Projects</h3>
-                </u>
-                <ol>
-                    <li><a href="shivaji.html">Chatrapati Shivaji Maharaj</a></li>
-                    <li><a href="mahatmagandhi.html">Mahatma Gandhi</a></li>
-                    <li><a href="top-influencers.html">Top Influencers</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="signup-form.html">Signup/Registration</a></li>
-                    <li><a href="assignment-form.html">Complete HTML Form</a></li>
-                    <li><a href="./table-tags.html/cpu-components.html">CPU Components</a></li>
-                    <li><a href="./table-tags.html/report-card.html">Report Card</a></li>
-                    <li><a href="./table-tags.html/college-student-data.html">Student Data</a></li>
-                    <li><a href="./table-tags.html/tbl-youtube-page.html">Youtube Page</a></li>
-                    <li><a href="./table-tags.html/table-layout-assignment.html">Table Layout</li>
-                    <li><a href="./table-tags.html/css-calculator.html">Calculator</a></li>
-                    <li><a href="./table-tags.html/tbl-index.html">Index Page</a></li>
-                </ol>
+                <h3>My HTML Projects</h3>
+                <table class="second-table">
+                    <tr>
+                        <td class="second-table-td"><img src="./assets/images/chhtraptishivaji.jpg" width="100px"
+                                alt="Shivaji"><br /><a href="shivaji.html">Chatrapati Shivaji Maharaj</a></td>
+                        <td class="second-table-td"><img src="./assets/images/mahatma.jpg" width="100px"
+                                alt="Mahatma Gandhi"><br /><a href="mahatmagandhi.html">Mahatma Gandhi</a></td>
+                        <td class="second-table-td"><img src="./assets/images/top-influencers.jpg" width="100px"
+                                alt="Top influencers"><br /><a href="top-influencers.html">Top Influencers</a></td>
+                        <td class="second-table-td"><img src="./assets/images/resume.avif" width="100px"
+                                alt="Resume"><br /><a href="resume.html">Resume</a></td>
+                    </tr>
+                    <tr>
+                        <td class="second-table-td"><img src="./assets/images/sign-up-form.png" width="100px"
+                                alt="Signup form"><br /><a href="signup-form.html">Signup/Registration</td>
+                        <td class="second-table-td"><img src="./assets/images/HTML-Form.jpg" width="100px"
+                                alt="HTML form"><br /><a href="assignment-form.html">Complete HTML Form</a></td>
+                        <td class="second-table-td"><img src="./assets/images/cpu components.jpg" width="100px"
+                                alt="CPU components"><br /><a href="./table-tags.html/cpu-components.html">CPU
+                                Components</a>
+                        </td>
+                        <td class="second-table-td"><img src="./assets/images/report-card.jpg" width="100px"
+                                alt="Report card"><br /><a href="./table-tags.html/report-card.html">Report Card</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="second-table-td"><img src="./assets/images/student-data.webp" width="100px"
+                                alt="Student data"><br /><a href="./table-tags.html/college-student-data.html">Student
+                                Data</a></td>
+                        <td class="second-table-td"><img src="./assets/images/youtube-page.jpg" width="100px"
+                                alt="Youtube page"><br /><a href="./table-tags.html/tbl-youtube-page.html">Youtube
+                                Page</a></td>
+                        <td class="second-table-td"><img src="./assets/images/table-layout.jpg" width="100px"
+                                alt="Table layout"><br /><a href="./table-tags.html/table-layout-assignment.html">Table
+                                Layout</a></td>
+                        <td class="second-table-td"><img src="./assets/images/calculator.jpg" width="100px"
+                                alt="Calculator"><br /><a href="./table-tags.html/css-calculator.html">Calculator</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="second-table-td"><img src="./assets/images/index-page.jpg" width="100px"
+                                alt="Index page"><br /><a href="./table-tags.html/tbl-index.html">Index Page</a></td>
+                        <td class="second-table-td"></td>
+                        <td class="second-table-td"></td>
+                        <td class="second-table-td"></td>
+                    </tr>
+                </table>
             </td>
 
         </tr>
