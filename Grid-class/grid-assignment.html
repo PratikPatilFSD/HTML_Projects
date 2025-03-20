@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid assignment</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgoldenrodyellow;
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+
+        /*Box one css*/
+        .box-one {
+            width: 100%;
+            height: 60px;
+            background-color: green;
+            grid-column: 1/span 3;
+            text-align: center;
+            padding-top: 25px;
+            font-size: 30px;
+            color: white;
+        }
+
+        /*Box two css*/
+        .box-two {
+            width: 100%;
+            height: 430px;
+            background-color: white;
+            grid-column: 1/span 2;
+            border-radius: 10px;
+            padding-top: 30px;
+        }
+
+        /*Box three css*/
+        .box-three {
+            width: 100%;
+            height: 430px;
+            background-color: white;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-top: 30px;
+        }
+
+        /*Box four css*/
+        .box-four {
+            width: 100%;
+            height: 25px;
+            background-color: rgb(85, 78, 78);
+            grid-column: 1/span 3;
+            text-align: center;
+            font-size: 15px;
+            color: white;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Main container-->
+    <div class="main-container">
+
+        <!--Box one-->
+        <div class="box-one">Breaking News</div>
+
+        <!--Box two-->
+        <div class="box-two">
+            <h1>‘Appu is designed to be a personalised tutor’: How this Google-backed AI tool is reshaping education
+            </h1>
+            <p>Artificial intelligence is on its way to reshape early childhood education in India, which is on the
+                threshold of transformation. Delhi-based non-profit organisation Rocket Learning recently launched Appu,
+                a new AI-powered learning tool that has been designed to support children between the ages of three and
+                six. Appu, developed in collaboration with Google.org, uses generative AI to offer personalised and
+                conversational learning experiences. With AI being increasingly integrated into everyday learning, the
+                organisation aims to fill the gaps in early education, especially among those from underserved
+                communities.</p>
+            <p>Rocket Learning has been working extensively with Anganwadi centres–the government-run daycare and early
+                learning centres–to enhance school readiness and IQ scores among young children. Sunil shared that the
+                organisation reaches around 3.2 million children across 10 states in India, working closely with both
+                caregivers and government stakeholders.</p>
+        </div>
+
+        <!--Box three-->
+        <div class="box-three">
+            <h4>Related News</h4>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </div>
+        
+        <!--Box four-->
+        <div class="box-four">ⓒ 2023 News Company. All rights reserved.</div>
+
+    </div>
+</body>
+
+</html>
