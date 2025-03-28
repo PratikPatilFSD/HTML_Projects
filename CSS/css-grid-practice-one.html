@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice one</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            
+            
+        }
+        .box4 {
+            width: 100%;
+            height: 100%;
+            background-color: lightslategray; 
+                  
+        }
+        .box {
+            width: 100%;
+            height: 100%;
+            background-color: lightcoral;        
+        }
+        .box1 {
+            width: 100%;
+            height: 100%;
+            background-color: lightblue; 
+            grid-column: 1/span 3;       
+        }
+        .box2 {
+            width: 100%;
+            height: 100%;
+            background-color: lightgreen;        
+        }
+        .box3 {
+            width: 100%;
+            height: 100%;
+            background-color: lightseagreen; 
+            grid-column: 1/span 4;       
+        }
+</style>
+      
+</head>
+
+<body>
+    <div class="container">
+        <div class="box4">Sr.no.</div>
+        <div class="box4">Subject</div>
+        <div class="box4">Out Of</div>
+        <div class="box4">Marks</div>
+        <div class="box">1</div>
+        <div class="box">English</div>
+        <div class="box">100</div>
+        <div class="box">75</div>
+        <div class="box">2</div>
+        <div class="box">Marathi</div>
+        <div class="box">100</div>
+        <div class="box">80</div>
+        <div class="box">3</div>
+        <div class="box">History</div>
+        <div class="box">50</div>
+        <div class="box">45</div>
+        <div class="box">4</div>
+        <div class="box">Geography</div>
+        <div class="box">50</div>
+        <div class="box">40</div>
+        <div class="box">4</div>
+        <div class="box">Economics</div>
+        <div class="box">100</div>
+        <div class="box">95</div>
+        <div class="box">5</div>
+        <div class="box">Science</div>
+        <div class="box">100</div>
+        <div class="box">85</div>
+        <div class="box1">Total</div>
+        <div class="box2">420</div>
+        <div class="box3">Percentage = 84 %</div>
+      
+    </div>
+</body>
+
+</html>
