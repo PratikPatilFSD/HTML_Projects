@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input-Output using Grid</title>
+    <style>
+        /*I/P O/P page body css*/
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgray;
+        }
+
+        /*I/P O/P page container css*/
+        .container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 0.23fr 0.2fr 0.9fr 0.2fr 0.4fr;
+            column-gap: 15px;
+            row-gap: 15px;
+            text-align: center;
+            font-size: large;
+        }
+
+        /*I/P O/P page heading css*/
+        .heading {
+            width: 50%;
+            height: 40px;
+            margin-left: 250px;
+            padding-top: 5px;
+            border-radius: 10px;
+            background-color: aqua;
+            display: grid;
+            grid-column: 1/span 5;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        /*I/P O/P page caption heading css*/
+        .box-caption {
+            height: 30px;
+            background-color: lightcoral;
+            font-weight: bold;
+            border-radius: 10px;
+            padding-top: 5px;
+        }
+
+        /*I/P O/P page inputs and outputs css*/
+        .box {
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            color: green;
+            border-radius: 10px;
+            text-align: justify;
+            padding-left: 10px;
+        }
+
+        /*I/P O/P page C language css*/
+        .box6 {
+            width: 100%;
+            height: 100%;
+            background-color: darkkhaki;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            display: grid;
+            grid-row: 3/span 2;
+        }
+
+        /*I/P O/P page JAVA language css*/
+        .box7 {
+            width: 100%;
+            height: 100%;
+            background-color: darkkhaki;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            display: grid;
+            grid-row: 5/span 2;
+        }
+
+        /*I/P O/P page Python language css*/
+        .box8 {
+            width: 100%;
+            height: 100%;
+            background-color: darkkhaki;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            display: grid;
+            grid-row: 7/span 2;
+        }
+
+        /*I/P O/P page Javascript language css*/
+        .box9 {
+            width: 100%;
+            height: 100%;
+            background-color: darkkhaki;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            display: grid;
+            grid-row: 9/span 5;
+        }
+
+        /*I/P O/P page Javascript language assign input css*/
+        .box10 {
+            width: 100%;
+            height: 100%;
+            background-color: lightgoldenrodyellow;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            display: grid;
+            grid-column: 2;
+            grid-row: 9/span 3;
+        }
+
+        /*I/P O/P page Javascript language prompt input css*/
+        .box11 {
+            width: 100%;
+            height: 100%;
+            background-color: lightgoldenrodyellow;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+            display: grid;
+            grid-column: 2;
+            grid-row: 12/span 2;
+        }
+
+        /*I/P O/P page other input types css*/
+        .box-type {
+            width: 100%;
+            height: 100%;
+            background-color: lightgoldenrodyellow;
+            color: black;
+            font-weight: bold;
+            border-radius: 10px;
+            text-align: center;
+            align-content: center;
+
+        }
+    </style>
+    </style>
+
+</head>
+
+<body>
+    <!--I/P O/P page container-->
+    <div class="container">
+
+        <!--I/P O/P page heading-->
+        <div class="heading">Input-Output Types in Different Languages</div>
+
+        <!--I/P O/P page caption heading-->
+        <div class="box-caption">Language</div>
+        <div class="box-caption">I/P Type</div>
+        <div class="box-caption">Input</div>
+        <div class="box-caption">O/P Type</div>
+        <div class="box-caption">Output</div>
+
+        <!--I/P O/P C language inputs and outputs-->
+        <div class="box6">C</div>
+        <div class="box-type">Assign</div>
+        <div class="box"><code>#include<`/stdio.h><br/>
+            int main(){<br/>
+            int a = 10;<br/>
+            int square = (a*a);<br/>
+            printf("Square is %d",square);
+            }</code></div>
+        <div class="box-type">Terminal</div>
+        <div class="box">Square is 100</div>
+        <div class="box-type">Terminal</div>
+        <div class="box"><code>#include<`/stdio.h><br/>
+            int main(){<br/>
+            int input;<br/>
+            printf("Enter a number \n");<br/>
+            scanf("%d",&input);<br/>
+            int square = (input*input);<br/>
+            printf("Square is %d",square);
+            }</code></div>
+        <div class="box-type">Terminal</div>
+        <div class="box">Enter a number<br />
+            10<br />
+            Square is 100
+        </div>
+
+        <!--I/P O/P JAVA language inputs and outputs-->
+        <div class="box7">Java</div>
+        <div class="box-type">Assign</div>
+        <div class="box"><code>class Scratch {<br/>
+            public static void main(String[] args) { <br/>
+                int a = 10;<br/>
+            int square = (a*a);<br/>
+                System.out.println("Square of 10 is "+square);<br/>}}</code></div>
+        <div class="box-type">Terminal</div>
+        <div class="box">Square of 10 is 100</div>
+        <div class="box-type">Terminal</div>
+        <div class="box"><code>class Scratch {<br/>
+            public static void main(String[] args) {<br/>
+                Scanner input = new Scanner(System.in);<br/>
+                System.out.println("Enter a number:");<br/>
+               int a = input.nextInt();<br/>
+               int square = a * a;<br/>
+               System.out.println("Square of a number is "+square);<br/>
+           }} </code></div>
+        <div class="box-type">Terminal</div>
+        <div class="box">Enter a number<br />
+            10<br />
+            Square of a number is 100</div>
+
+        <!--I/P O/P Python language inputs and outputs-->
+        <div class="box8">Python</div>
+        <div class="box-type">Assign</div>
+        <div class="box"><code>a = 10<br/>
+            square = a*a<br/>
+            print("Square value of a is",square)</code></div>
+        <div class="box-type">Terminal</div>
+        <div class="box">Square value of a is 100</div>
+        <div class="box-type">Terminal</div>
+        <div class="box"><code>a = int(input("Enter a number \n"))<br/>
+            square = int (input(a*a))<br/>
+            print = int(input("Square of a number is",square))
+            </code></div>
+        <div class="box-type">Terminal</div>
+        <div class="box">Enter a number<br />10<br />100</div>
+
+        <!--I/P O/P Javascript language inputs and outputs-->
+        <div class="box9">Javascript</div>
+        <div class="box10">Assign</div>
+        <div class="box"><code>let a = 10<br/>
+            let square = a*a<br/>
+            console.log("Square of a is "+square)</code></div>
+        <div class="box-type">Console</div>
+        <div class="box">Square of a is 100</div>
+        <div class="box"><code>let a = 10<br/>
+            let square = a*a<br/>
+            alert("Square of a is "+square)
+            </code></div>
+        <div class="box-type">Alert</div>
+        <div class="box">Square of a is 100</div>
+        <div class="box"><code><body>
+        document.getElementById("display").innerHTML="Hello Javascript!"
+        </code></div>
+        <div class="box-type">UI</div>
+        <div class="box">Hello Javascript!</div>
+        <div class="box11">Promt</div>
+        <div class="box"><code>let input = prompt("Enter a number")<br/>
+            let square = input*input<br/>
+            alert("Square is "+square)</code></div>
+        <div class="box-type">Alert</div>
+        <div class="box">Enter a number<br />
+            10<br />Square is 100</div>
+        <div class="box"><code>let input = prompt("Enter a number")<br/>
+            let square = input*input<br/>
+            console.log("Square is "+square)<br/>
+        </code></div>
+        <div class="box-type">Console</div>
+        <div class="box">Enter a number<br />
+            10<br />Square is 100</div>
+    </div>
+</body>
+
+</html>

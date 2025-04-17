@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grouping selector</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+         
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 10%;
+            background-color: aqua;
+        }
+
+        .main-page {
+            width: 100%;
+            height: 80%;
+        }
+
+        #h3 {
+            text-align: center;
+        }
+
+        h3:hover {
+            color: blue;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 30px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: black;
+            padding-top: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+        }
+
+        p:hover {
+            font-weight: bold;
+        }
+
+        .main-image {
+            width: 70px;
+            float: left;
+        }
+
+        .main-image:hover {
+            width: 90px;
+        }
+        sup,strong,u{
+            color: aquamarine;
+        }
+        .footer {
+            width: 100%;
+            height: 10%;
+            background-color: blueviolet;
+        }
+
+        h3,
+        a,
+        .header {
+            text-align: center;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <span><a href="#">Home</a></span>
+        <span><a href="#">Contact</a></span>
+    </div>
+    <div class="main-page">
+        <h3 id="main-text">Welcome to my website</h3>
+        <p>
+            <img class="main-image" src="../assets/images/chhtraptishivaji.jpg">
+            In the <strong>Treaty of Purandar</strong>, signed by Shivaji and Jai Singh on 11<sup>th</sup> June 1665,
+            Shivaji
+            agreed to give up 23 of his
+            forts, keeping 12 for himself, and pay compensation of 400,000 gold <strong><mark>hun</mark></strong> to
+            the Mughals. Shivaji agreed to become
+            a vassal of the Mughal empire, and to send his son Sambhaji, along with 5,000 horsemen, to fight for the
+            Mughals in
+            the Deccan, as a <u>mansabdar</u>.
+        </p>
+    </div>
+    <div class="footer">
+        <h3>@2025 copyright,by Enjoy Programming</h3>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: auto;
+            background-color: #102E50;
+
+        }
+
+        .left-section {
+            width: 100%;
+            height: 60px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .logo {
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+            padding-left: 50px;
+
+        }
+
+        .header {
+            width: 100%;
+            height: 100%;
+            color: white;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            background-color: blue;
+        }
+
+        .right-section {
+            width: 100%;
+            height: 650px;
+            line-height: 1.5;
+            background-image: url(../assets/images/port-back.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+
+        .home-text {
+            width: 550px;
+            height: 100%;
+            margin-top: 90px;
+            margin-left: 50px;
+            margin-right: 20px;
+            color: white;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        b {
+            color: rgb(160, 160, 64);
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h2:hover {
+            color: orangered;
+            transform: scale(1.1);
+
+        }
+
+        .resume-button {
+            width: 170px;
+            height: 40px;
+            background-color: rgb(160, 160, 64);
+            border-radius: 40px;
+            color: white;
+            margin-top: 50px;
+            padding-left: 20px;
+            padding-top: 5px;
+        }
+
+        .resume-button:hover {
+            transform: scale(1.2);
+        }
+
+
+        .about-me {
+            width: 90px;
+            height: 650px;
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+        .about-me-intro {
+            width: 600px;
+            font-size: 18px;
+            margin-left: 50px;
+            text-align: justify;
+        }
+        .home-image {
+            width: 300px;
+            height: 100%;
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+
+        img {
+            width: 300px;
+            border: 5px solid rgb(160, 160, 64);
+            border-radius: 100%;
+        }
+
+
+        .skills-heading {
+            width: 100%;
+            height: 20px;
+            background-color: aqua;
+            color: white;
+            padding-left: 50px;
+        }
+
+        .skills-box {
+            width: 900px;
+            height: auto;
+            margin-left: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            row-gap: 20px;
+            column-gap: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .box {
+            width: 250px;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <section class="left-section">
+
+            <div class="logo">Logo</div>
+
+            <div class="header">
+                <span><a href="#home"><i class="fa fa-home"></i>
+                        Home
+                    </a></span>
+
+                <span><a href="#about"><i class="fa fa-user"></i>
+                        About
+                    </a></span>
+
+                <span><a href="#skills"><i class="fa fa-list"></i>
+                        Skills
+                    </a></span>
+
+                <span><a href="#project"><i class="fa fa-briefcase"></i>
+                        Project
+                    </a></span>
+
+                <span><a href="#contact"><i class="fa fa-comments"></i>
+                        Contact
+                    </a></span>
+
+            </div>
+
+        </section>
+
+        <section class="right-section">
+
+            <div class="home-text">
+
+                <h1>Hello! This is <b>Pratik Patil</b></h1>
+                <h2>I' am a Full Stack Developer</h2>
+                <p> I am a passionate Full Stack Developer specializing in creating dynamic web applications. Proficient
+                    in ReactJS, Node.js, and MongoDB, I enjoy solving complex problems with efficient, scalable
+                    solutions. I’m driven by continuous learning and excited to contribute to innovative projects. Let’s
+                    connect to build something great together!
+                </p>
+
+                <div class="resume-button"><a href="./css-grid-resume.html">Download Resume</a></div>
+            </div>
+
+        </section>
+        <div class="about-me">
+           
+
+            <div class="about-me-intro">
+                <h1>About Me</h1>
+
+                <p> As a dedicated full-stack developer , I am a highly motivated and adaptable to contribute to a
+                    dynamic team, possessing foundational knowledge in front-end and back-end technologies, and a strong
+                    desire
+                    to learn and grow within the field.<br /> <br />I have a solid understanding of web development
+                    fundamentals, including HTML and CSS.<br /><br />
+                    I am a quick learner, eager to embrace new technologies and methodologies, and I am adept at
+                    adapting to different project requirements.<br /><br />I am a team player, able to communicate
+                    effectively
+                    and contribute positively to a collaborative
+                    development environment.
+                </p>
+            </div>
+
+            <div class="home-image"> 
+              <img src="../assets/images/photo.jpg">
+            </div>
+        </div>
+
+        <div class="Skills-heading">
+            <h1>Skills</h1>
+        </div>
+
+        <div class="skills-box">
+
+            <!--Product one-->
+            <div class="box">
+
+                <h3>Headphone</h3>
+                <h4>₹1,499</h4>
+                <p>ZEBRONICS Havoc Premium Gaming Over Ear Headphone with Dolby Atmos Subscription(Black)</p>
+            </div>
+
+            <!--Product two-->
+            <div class="box">
+
+                <h3>Keyboard</h3>
+                <h4>₹929</h4>
+                <p>ZEBRONICS Companion 203, 2.4GHz Wireless Keyboard & Mouse Combo (Black)</p>
+            </div>
+
+            <!--Product three-->
+            <div class="box">
+
+                <h3>Wireless Gaming Mouse</h3>
+                <h4>₹2,799</h4>
+                <p>Kreo Anzu Ultralight Ergonomic Wireless Gaming Mouse for PC</p>
+            </div>
+
+            <!--Product four-->
+            <div class="box">
+
+                <h3>Laptop/Desktop Stand</h3>
+                <h4>₹349</h4>
+                <p>Dyazo 6 Angles Adjustable Aluminum Ergonomic Portable Laptop/Desktop Riser Stand (Silver)</p>
+            </div>
+
+            <!--Product five-->
+            <div class="box">
+
+                <h3>Monitor Screen Light Bar</h3>
+                <h4>₹1,699</h4>
+                <p>Techzere Plastic 13-Inch Laptop Monitor Screen Light Bar With Smart Touch Sensor</p>
+            </div>
+
+            <!--Product six-->
+            <div class="box">
+
+                <h3>Bluetooth Speaker</h3>
+                <h4>₹1,599</h4>
+                <p>boAt Stone 352 Pro Bluetooth Speaker w/ 14W Signature Sound</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
