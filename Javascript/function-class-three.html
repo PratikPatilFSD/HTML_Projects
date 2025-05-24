@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations in Two Variables</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;      
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 90%;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color:rgb(57, 110, 110) ;
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display css*/
+        .display {
+            width: 80%;
+            height: 150px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 65px;
+            margin-top: 20px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;   
+        }
+
+        /*Display text css*/
+         span {
+            font-size: 40px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        input {
+            width: 30%;
+            height: 25%;
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        /*Mathematical operations css*/
+        .operation{
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 80%;
+            height: 80%;
+            background-color: brown;
+            border-radius: 5px;
+            margin-left: 80px;
+            margin-top: 20px;   
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+        <h1>Mathematical Operations in two variables</h1>
+
+        <!--Display-->
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+
+            <input type="number" id="input-one" placeholder="Enter a number one" />
+            <input type="number" id="input-two" placeholder="Enter a number two" />
+
+        </div>
+
+        <!--Maathematical operations button-->
+        <div class="operation">
+            <button class="submit-button" onclick="addition()">Add</button>
+            <button class="submit-button" onclick="substraction()">Substract</button>
+            <button class="submit-button" onclick="multiplication()">Multiply</button>
+            <button class="submit-button" onclick="divison()">Divide</button>
+        </div>
+        
+        <!--JavaScript start-->
+        <script>
+
+            //Addition Function
+            function addition() {
+                let num1 = Number(document.getElementById("input-one").value);
+                let num2 = Number(document.getElementById("input-two").value);
+                let sum = num1 + num2;
+                document.getElementById("display").innerHTML = sum;
+            }
+
+            //Substraction Function
+            function substraction() {
+                let num1 = Number(document.getElementById("input-one").value);
+                let num2 = Number(document.getElementById("input-two").value);
+                let sub = num1 - num2;
+                document.getElementById("display").innerHTML = sub;
+            }
+
+            //Muliplication Function
+            function multiplication() {
+                let num1 = Number(document.getElementById("input-one").value);
+                let num2 = Number(document.getElementById("input-two").value);
+                let product = num1 * num2;
+                document.getElementById("display").innerHTML = product;
+            }
+
+            //Division Function
+            function divison() {
+                let num1 = Number(document.getElementById("input-one").value);
+                let num2 = Number(document.getElementById("input-two").value);
+                let div = num1 / num2;
+                document.getElementById("display").innerHTML = div;
+            }
+            
+        </script>
+         <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->  
+</body>
+
+</html>

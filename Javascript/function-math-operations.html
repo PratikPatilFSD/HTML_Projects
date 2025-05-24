@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function class three</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .main-container {
+            width: 70%;
+            height: 90%;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: #27548A;
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            box-shadow: 5px 5px 5px 5px;
+        }
+
+        span {
+            font-size: 50px;
+            color: black;
+            text-align: center;
+        }
+
+        .display {
+            width: 80%;
+            height: 150px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 65px;
+            margin-top: 20px;
+            text-align: center;
+            align-content: center;
+           
+        }
+
+        input {
+            width: 30%;
+            height: 25%;
+            margin-top: 50px;
+            font-size: 20px;
+
+        }
+
+        .operation {
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        .submit-button {
+            width: 80%;
+            height: 80%;
+            background-color: brown;
+            border-radius: 10%;
+            margin-left: 80px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 5px;
+
+        }
+
+        .submit-button:hover {
+            background-color: green;
+           
+            cursor: pointer;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+        <h1>Mathematical Operations in JavaScript</h1>
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+
+        <div>
+            <input type="number" id="input" placeholder="Enter a number" />
+
+
+        </div>
+        <div class="operation">
+            <button class="submit-button" onclick="square()">Square</button>
+            <button class="submit-button" onclick="squareroot()">Squareroot</button>
+            <button class="submit-button" onclick="cube()">Cube</button>
+            <button class="submit-button" onclick="cuberoot()">Cuberoot</button>
+            <button class="submit-button" onclick="exponentian()">Exponentian</button>
+            <button class="submit-button" onclick="logarithmic()">Logarithmic</button>
+            <button class="submit-button" onclick="sinusoidal()">Sinusoidal</button>
+            <button class="submit-button" onclick="cosine()">Cosine</button>
+            <button class="submit-button" onclick="tangential()">Tangential</button>
+        </div>
+
+        <script>
+            function square() {
+                let num = Number(document.getElementById("input").value);
+                let square = Math.pow(num, 2);
+                document.getElementById("display").innerHTML = square;
+            }
+            function squareroot() {
+                let num = Number(document.getElementById("input").value);
+                let sroot = Math.pow(num, 0.5);
+                document.getElementById("display").innerHTML = sroot;
+            }
+            function cube() {
+                let num = Number(document.getElementById("input").value);
+                let cube = Math.pow(num, 3);
+                document.getElementById("display").innerHTML = cube;
+            }
+            function cuberoot() {
+                let num = Number(document.getElementById("input").value);
+                let croot = Math.cbrt(num);
+                document.getElementById("display").innerHTML = croot;
+            }
+            function exponentian() {
+                let num = Number(document.getElementById("input").value);
+                let exp = Math.pow(num, num);
+                document.getElementById("display").innerHTML = exp;
+            }
+            function logarithmic() {
+                let num = Number(document.getElementById("input").value);
+                let log = Math.log(num);
+                document.getElementById("display").innerHTML = log;
+            }
+            function sinusoidal() {
+                let num = Number(document.getElementById("input").value);
+                let sin = Math.sin(num);
+                document.getElementById("display").innerHTML = sin;
+            }
+            function cosine() {
+                let num = Number(document.getElementById("input").value);
+                let cos = Math.cos(num);
+                document.getElementById("display").innerHTML = cos;
+            }
+            function tangential() {
+                let num = Number(document.getElementById("input").value);
+                let tan = Math.tan(num);
+                document.getElementById("display").innerHTML = tan;
+            }
+
+
+
+
+
+
+
+        </script>
+</body>
+
+</html>

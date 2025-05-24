@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function class two</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .main-container {
+            width: 40%;
+            height: 70%;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            margin-left: 200px;
+            margin-right: 200px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        span {
+            font-size: 30px;
+            color: black;
+            text-align: center;
+        }
+
+        .display {
+            width: 80%;
+            height: 100%;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input {
+            width: 70%;
+            height: 25%;
+            margin-left: 50px;
+            margin-top: 50px;
+            font-size: 30px;
+
+        }
+
+        .submit-button {
+            width: 80%;
+            height: 50%;
+            margin-left: 35px;
+            margin-top: 20px;
+        }
+
+        .submit-button:hover {
+            background-color: blueviolet;
+
+        }
+
+        .button-group {
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .btn {
+            height: 80px;
+            font-size: 20px;
+            background-color: lightblue;
+
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+
+        <div>
+            <input type="text" id="input-one" placeholder="Enter a text 1" />
+            <input type="text" id="input-two" placeholder="Enter a text 2" />
+
+        </div>
+        <button class="submit-button" onclick="displayAddition()">Submit</button>
+    </div>
+    <!--Button group end-->
+
+    <!--Button group start-->
+    <div class="button-group">
+        <button class="btn" onclick="displaySunday()" id="sunday">Sunday</button>
+        <button class="btn" onclick="displayMonday()" id="monday">Monday</button>
+        <button class="btn" onclick="displayTuesday()" id="tuesday">Tuesday</button>
+        <button class="btn" onclick="displayWednesday()" id="wednesday">Wednesday</button>
+        <button class="btn" onclick="displayThrusday()" id="thrusday">Thrusday</button>
+        <button class="btn" onclick="displayFriday()" id="friday">Friday</button>
+        <button class="btn" onclick="displaySaturday()" id="saturday">Saturday</button>
+    </div>
+    <!--Button group end-->
+    <script>
+        function displayAddition(){
+            let number1 = document.getElementById("input-one").value;
+            let number2 = document.getElementById("input-two").value;
+            document.getElementById("display").innerHTML =number1 + number2;
+            return 10;
+        }
+
+        function displaySunday() {
+            document.getElementById("display").innerHTML = "Today is a Sunday!";
+            document.getElementById("sunday").style.backgroundColor = "green";
+            document.getElementById("sunday").style.color = "white";
+        }
+        
+        function displayMonday() {
+            document.getElementById("display").innerHTML = "Today is a Monday!";
+            document.getElementById("monday").style.backgroundColor = "green";
+            document.getElementById("monday").style.color = "white";
+        }
+        function displayTuesday() {
+            document.getElementById("display").innerHTML = "Today is a Tuesday!";
+            document.getElementById("tuesday").style.backgroundColor = "green";
+            document.getElementById("tuesday").style.color = "white";
+        }
+        function displayWednesday() {
+            document.getElementById("display").innerHTML = "Today is a Wednesday!";
+            document.getElementById("wednesday").style.backgroundColor = "green";
+            document.getElementById("wednesday").style.color = "white";
+        }
+        function displayThrusday() {
+            document.getElementById("display").innerHTML = "Today is a Thrusday!";
+            document.getElementById("thrusday").style.backgroundColor = "green";
+            document.getElementById("thrusday").style.color = "white";
+        }
+        function displayFriday() {
+            document.getElementById("display").innerHTML = "Today is a Friday!";
+            document.getElementById("friday").style.backgroundColor = "green";
+            document.getElementById("friday").style.color = "white";
+        }
+        function displaySaturday() {
+            document.getElementById("display").innerHTML = "Today is a Saturday!";
+            document.getElementById("saturday").style.backgroundColor = "green";
+            document.getElementById("saturday").style.color = "white";
+        }
+    </script>
+</body>
+
+</html>
