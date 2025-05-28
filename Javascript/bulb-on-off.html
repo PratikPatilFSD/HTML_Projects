@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing bulb image using function</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            margin-left: 100px;
+            background-color: darkseagreen;
+            
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        h2 {
+            text-align: center;
+           
+        }
+
+        img {
+            margin-left: 120px;
+            align-content: center;
+            margin-bottom: 0%;
+        }
+
+        button {
+            width: 122px;
+            height: 50px;
+            margin-left: 90px;
+            background-color: blueviolet;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: green;
+            border-radius: 10px;
+            border-color: white;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><br/>
+        <h2>Bulb ON-OFF</h2><br/>
+        <img src="Bulb is Off.png" id="image" height="300px" width="250px">
+        <br />
+        <br />
+        <button onclick="bulbImage()">OFF</button>
+        <button onclick="changeImage()">ON</button>
+
+        <script>
+            function bulbImage() {
+                document.getElementById('image').src = "Bulb is Off.png";
+            }
+
+            function changeImage() {
+                document.getElementById('image').src = "Bulb is On.png";
+            }
+        </script>
+    </div>
+</body>
+
+</html>
