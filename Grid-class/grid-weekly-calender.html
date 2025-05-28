@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Calender</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /*Weekly calender heading css*/
+        h1 {
+            text-align: center;
+        }
+
+        /*Weekly calender container css*/
+        .container {
+            width: 1001px;
+            height: 300px;
+            margin-left: 9px;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+        }
+
+        /*Weekly calender day card css*/
+        .day-card {
+            width: 140px;
+            height: 250px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 2px;
+        }
+
+        /*Day card heading css*/
+        .day-heading {
+            width: 142px;
+            height: 30px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            background-color: #172646;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /*Day card routine css*/
+        .day-routine {
+            width: 140px;
+            height: 210px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(122, 119, 86);
+        }
+
+        /*Day card routine hover effect css*/
+        .day-routine:hover{
+            border-color:#34398f ;
+            border-width: 2px;
+        }
+
+        /*Day card routine date heading css*/
+        h3 {
+            text-align: center;
+            margin-right: 75px;
+        }
+
+        /*Day card routine box css*/
+        .box {
+            width: 90px;
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            border-radius: 20%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .box1 {
+            width: 90px;
+            height: 40px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+            border-radius: 20%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+       
+        .line {
+            width: 3px;
+            height: 46px;
+            border-radius: 20%;
+            background-color: green;
+
+        }
+
+        .line1 {
+            width: 3px;
+            height: 46px;
+            border-radius: 20%;
+            background-color: #5459AC;
+
+        }
+
+        .line2 {
+            width: 3px;
+            height: 46px;
+            border-radius: 20%;
+            background-color: red;
+
+        }
+
+        /*Day card routine text*/
+        .text {
+            width: 121px;
+            height: 40px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-left: 5px;
+            font-size: 15px;
+            text-align: left;
+            align-content: center;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Weekly calender heading-->
+    <h1>Weekly Calender</h1>
+
+     <!--Weekly calender container-->
+    <div class="container">
+        
+         <!--Weekly calender day card-->
+        <div class="day-card">
+
+            <!--Weekly calender  sunday heading-->
+            <div class="day-heading">Sunday</div>
+            
+            <!--Weekly calender sunday routine-->
+            <div class="day-routine">
+                <h3>May 5</h3>
+                <div class="box">
+                    <div class="line"></div>
+                    <div class="text">Brunch with family - 11 AM</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="day">
+            
+            <!--Weekly calender  monday heading-->
+            <div class="day-heading">Monday</div>
+
+             <!--Weekly calender monday routine-->
+            <div class="day-routine">
+                <h3>May 6</h3>
+                <div class="box">
+                    <div class="line1"></div>
+                    <div class="text">Team meeting - 10 AM</div>
+                </div>
+                <div class="box">
+                    <div class="line1"></div>
+                    <div class="text">Project deadline - 5 PM</div>
+                </div>
+                <div class="box">
+                    <div class="line"></div>
+                    <div class="text">Gym - 7 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day">
+
+            <!--Weekly calender  tuesday heading-->
+            <div class="day-heading">Tuesday</div>
+
+             <!--Weekly calender tuesday routine-->
+            <div class="day-routine">
+                <h3>May 7</h3>
+                <div class="box1">
+                    <div class="line2"></div>
+                    <div class="text">Doctor appointment - 2 PM</div>
+                </div>
+                <div class="box">
+                    <div class="line1"></div>
+                    <div class="text">Client call - 4 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day">
+            <!--Weekly calender  wednesday heading-->
+            <div class="day-heading">Wednesday</div>
+
+            <!--Weekly calender wednesday routine-->
+            <div class="day-routine">
+                <h3>May 8</h3>
+                <div class="box">
+                    <div class="line1"></div>
+                    <div class="text">Workshop - All day</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day">
+
+            <!--Weekly calender  thursday heading-->
+            <div class="day-heading">Thursday</div>
+
+             <!--Weekly calender thursday routine-->
+            <div class="day-routine">
+                <h3>May 9</h3>
+                <div class="box">
+                    <div class="line1"></div>
+                    <div class="text">Standup meeting - 9.30 AM</div>
+                </div>
+                <div class="box">
+                    <div class="line"></div>
+                    <div class="text">Dinner with friends - 8 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day">
+
+            <!--Weekly calender  friday heading-->
+            <div class="day-heading">Friday</div>
+
+             <!--Weekly calender friday routine-->
+            <div class="day-routine">
+                <h3>May 10</h3>
+                <div class="box">
+                    <div class="line1"></div>
+                    <div class="text">Weekly review - 3 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="day">
+
+            <!--Weekly calender  saturday heading-->
+            <div class="day-heading">Saturday</div>
+
+             <!--Weekly calender  saturday routine-->
+            <div class="day-routine">
+                <h3>May 11</h3>
+                <div class="box">
+                    <div class="line"></div>
+                    <div class="text">Weekend getaway!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
