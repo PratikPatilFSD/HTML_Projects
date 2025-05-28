@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Input Output Class</title>
+    <style>
+        .input-field {
+            width: 400px;
+            height: 200px;
+            background-color: lightyellow;
+            padding: 20px;
+        }
+  
+        input {
+            width: 90%;
+            height: 30%;
+            font-size: 25px;
+            border-radius: 10px;
+        }
+
+        button {
+            width: 140px;
+            height: 50px;
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="result"></p>
+    <div class="input-field">
+        <p id="display">Display</p>
+        <input type="text" id="input" placeholder="Enter a number">
+        <button onclick="inputFunction()">Submit</button>
+    </div>
+
+
+    <script>
+        //assign
+        //var number = 10;
+        //output
+        //console.log(number);                               //output on console
+        //alert(number);                                     //output on alert
+        //document.getElementById('result').innerHTML=number  //output on HTML
+
+
+        //assign
+        //var number = 10;
+        //output
+        //console.log(number);                                 //output on console
+        //alert(number);                                        //output on console
+        // document.getElementById('result').innerHTML=number     //output on console
+
+        //input using HTML
+        function inputFunction() {
+            var number = document.getElementById('input').value;
+            document.getElementById('display').innerHTML = number;
+            alert(number);
+            console.log(number);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

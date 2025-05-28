@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Input Output Class</title>
+    <style>
+        
+        /*Input output field css*/
+        .input-otput-field {
+            width: 80%;
+            height: 100%;
+            margin-left: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /*Input  field css*/
+        .input-field {
+            width: 400px;
+            height: 590px;
+            background-color: darkorchid;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Input  field heading css*/
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        /*Input css*/
+        input {
+            width: 300px;
+            height: 50px;
+            margin-left: 50px;
+            margin-top: 20px;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        /*Select input css*/
+        select {
+            width: 310px;
+            height: 52px;
+            margin-left: 50px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        /*Input button css*/
+        button {
+            width: 60px;
+            height: 30px;
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 340px;
+            cursor: pointer;
+        }
+
+        /*Output field css*/
+        .output-field {
+            width: 400px;
+            height: 240px;
+            background-color: darkgoldenrod;
+            border-radius: 10px;
+            color: white;
+            padding-left: 20px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Submit button css*/
+        button {
+            width: 140px;
+            height: 50px;
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 100px;
+            margin-top: 20px;
+            border: none;
+        }
+       
+        /*Submit button hover effect css*/
+        button:hover{
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!--Input output field-->
+    <div class="input-otput-field">
+
+        <!--Input field-->
+        <div class="input-field">
+
+            <!--Input field heading-->
+            <h2>Students Data</h2>
+
+            <!--Input field inputs-->
+            <input type="text" id="name" placeholder="Enter your name"><br /><br />
+            <input type="number" id="age" placeholder="Enter your age"><br /><br />
+            <select id="gender">
+                <option>Select your gender</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select>
+            <input type="email" id="email" placeholder="Enter your email"><br /><br />
+            <input type="text" id="course" placeholder="Enter your course name">
+            <button onclick="inputFunction()">Submit</button>
+        </div>
+
+        <!--Output field-->
+        <div class="output-field">
+
+            <!--Output field heading-->
+            <h2>Display</h2>
+            <p id="display-name"></p>
+            <p id="display-age"></p>
+            <p id="display-gender"></p>
+            <p id="display-email"></p>
+            <p id="display-course"></p>
+        </div>
+    </div>
+
+    <!--Output field script-->
+    <script>
+        function inputFunction() {
+            var name = document.getElementById('name').value;
+            document.getElementById('display-name').innerHTML ="Name: "+name;
+            
+            var age = document.getElementById('age').value;
+            document.getElementById('display-age').innerHTML ="Age: "+age;
+           
+            var gender = document.getElementById('gender').value;
+            document.getElementById('display-gender').innerHTML ="Gender: "+gender;
+           
+            var email = document.getElementById('email').value;
+            document.getElementById('display-email').innerHTML ="Email: "+email;
+           
+            var course = document.getElementById('course').value;
+            document.getElementById('display-course').innerHTML ="Course: "+course;
+
+        }
+    </script>
+</body>
+
+</html>
