@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Change Onclick</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            margin-left: 100px;
+            background-color: darkseagreen;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        h2 {
+            text-align: center;
+
+        }
+
+        img {
+
+            align-content: center;
+            margin-bottom: 0%;
+        }
+
+        input {
+            width: 70%;
+            height: 4.5%;
+            margin-left: 60px;
+            margin-top: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 122px;
+            height: 50px;
+            margin-left: 90px;
+            background-color: blueviolet;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: green;
+            border-radius: 10px;
+            border-color: white;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><br />
+        <h2>Mood Checker</h2><br />
+        <img src="" id="image" height="100px" width="100px">
+        <input type="text" id="input-one" placeholder="Enter your mood">
+        <br />
+        <button onclick="moodImage()">Check Mood</button>
+
+
+        <script>
+            
+            function moodImage() {
+                let mood = document.getElementById("input-one").value;
+                if (mood == "happy") {
+                    document.getElementById("image").src = "https://t3.ftcdn.net/jpg/07/95/44/72/240_F_795447282_Ln3hs51rBz4TLyCU2onNWy436UXTI7Gq.jpg";
+
+                }
+                else if (mood == "cool") {
+                    document.getElementById("image").src = "https://as1.ftcdn.net/v2/jpg/12/72/21/44/1000_F_1272214429_M1XvvzbHzsEL1h5ckNj149W3Qn3MvnYU.webp";
+                }
+
+                else {
+                    document.getElementById("image").src = "https://as2.ftcdn.net/v2/jpg/07/89/75/95/1000_F_789759517_F0ILYejQGNY9kbGS4vdlmVF6VkfhdNYX.webp";
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

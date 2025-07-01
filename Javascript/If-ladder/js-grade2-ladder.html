@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder if else student gradecard</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://img.freepik.com/free-vector/flat-international-day-education-background_23-2151081135.jpg?t=st=1751274471~exp=1751278071~hmac=1713e634c89e4999cb3f798b35d8555fa2d5beb5a2859978620c27f455716a96&w=996);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 60%;
+            height: 70%;
+            background-color: white;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 93%;
+            height: 90%;
+            margin: 20px;
+            background-color: #615c31;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 80%;
+            height: 15%;
+            font-size: 18px;
+        }
+
+        button {
+            width: 82%;
+            height: 15%;
+            margin-top: 20px;
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        #result {
+            width: 80%;
+            height: 15%;
+            background-color: cornsilk;
+            text-align: center;
+            align-content: center;
+            border-style: solid;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h2>Student Grade</h2>
+            <input type="text" id="inputname" placeholder="Enter student name"><br />
+            <input type="text" id="input" placeholder="Enter marks"><br />
+            <button onclick="marksToGrade()">Convert grade to marks</button><br />
+            <p id="result">Display</p>
+        </div>
+    </div>
+    <script>
+        function marksToGrade() {
+            let name = document.getElementById("inputname").value;
+            let marks = document.getElementById("input").value;
+            let grade = document.getElementById("result").innerHTML;
+
+            if (marks >= 80) {
+                grade = "A Grade";
+
+            }
+            else if (marks >= 65) {
+                grade = "B Grade";
+            }
+            else if (marks >= 50) {
+                grade = "C Grade";
+            }
+            else if (marks >= 35) {
+                grade = "D Grade";
+            }
+            else {
+                grade = "Fail";
+            }
+            document.getElementById("result").innerHTML = "Student name is " + name + " and grade is " + grade;
+        }
+    </script>
+</body>
+
+</html>

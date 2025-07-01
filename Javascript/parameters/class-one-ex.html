@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameters</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 70%;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: rgb(99, 134, 134);
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Headind css*/
+        h1 {
+            color: white;
+        }
+
+        /*Display css*/
+        .display {
+            width: 80%;
+            height: 150px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 65px;
+            margin-top: 20px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display text css*/
+        span {
+            font-size: 40px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        input {
+            width: 30%;
+            height: 25%;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+
+        /*Mathematical operations css*/
+        .operation {
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 80%;
+            height: 80%;
+            background-color: brown;
+            border-radius: 5px;
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+
+
+        <!--Display-->
+        <div class="display">
+            <span id="display"></span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+
+
+
+        </div>
+
+        <!--Show number buttons-->
+        <div class="operation">
+            <button onclick="showNumber(1)" class="submit-button">1</button>
+            <button onclick="showNumber(2)" class="submit-button">2</button>
+            <button onclick="showNumber(3)" class="submit-button">3</button>
+            <button onclick="showNumber(4)" class="submit-button">4</button>
+        </div>
+
+        <!--JavaScript start-->
+        <script>
+
+            //Show Number Function
+            function showNumber(num) {
+              document.getElementById("display").innerHTML += num;
+            }
+
+
+
+        </script>
+        <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->
+</body>
+
+</html>

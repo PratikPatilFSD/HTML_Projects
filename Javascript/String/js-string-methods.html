@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Input Output Class</title>
+    <style>
+        /*Input output field css*/
+        .input-otput-field {
+            width: 80%;
+            height: 100%;
+            margin-left: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /*Input  field css*/
+        .input-field {
+            width: 400px;
+            height: 240px;
+           
+            color: white;
+            background-color: darkorchid;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Input  field heading css*/
+        h3 {
+           
+            color: white;
+            margin-left: 50px;
+
+        }
+
+        /*Input css*/
+        input {
+            width: 300px;
+            height: 50px;
+            margin-left: 50px;
+            margin-top: 20px;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        /*Select input css*/
+
+
+        /*Input button css*/
+        button {
+            width: 300px;
+            height: 50px;
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 50px;
+            cursor: pointer;
+        }
+
+        /*Output field css*/
+        .output-field {
+            width: 400px;
+            height: 240px;
+            background-color: darkturquoise ;
+            border-radius: 10px;
+           
+            padding-left: 20px;
+            box-shadow: 5px 5px 5px;
+        }
+        h2{
+            text-align: center;
+             color: white;
+        }
+
+        #display-string,
+        #display-length,
+        #display-uppercase,
+        #display-slice {
+            font-size: 20px;
+        }
+
+        /*Submit button css*/
+        submit-button {
+            width: 140px;
+            height: 50px;
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        /*Submit button hover effect css*/
+        submit-button:hover {
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Input output field-->
+    <div class="input-otput-field">
+
+        <!--Input field-->
+        <div class="input-field">
+            <label>
+                <h3>String :-</h3>
+            </label>
+            <input type="text" id="input-one" placeholder="Enter a string " />
+            <br /><br />
+            <button class="submit-button" onclick="inputFunction()">Analyze String</button>
+
+        </div>
+
+        <!--Output field-->
+        <div class="output-field">
+
+            <!--Output field heading-->
+            <h2>Display</h2>
+            <p id="display-string"></p>
+            <p id="display-length"></p>
+            <p id="display-uppercase"></p>
+            <p id="display-slice"></p>
+
+        </div>
+
+
+    </div>
+
+    <!--Output field script-->
+    <script>
+        function inputFunction() {
+
+            let string1 = document.getElementById("input-one").value;
+
+            document.getElementById('display-string').innerHTML = "String is: " + string1;
+
+            let string1Length = string1.length;
+            document.getElementById('display-length').innerHTML = "Length is: " + string1Length;
+
+            let string1UpperCase = string1.toUpperCase();
+            document.getElementById('display-uppercase').innerHTML = "Upper case is: " + string1UpperCase;
+
+            let string1slice = string1.slice(0, 5);
+            document.getElementById('display-slice').innerHTML = "Slice(0,5) is: " + string1slice;
+
+        }
+    </script>
+</body>
+
+</html>

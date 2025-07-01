@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print square pattern</title>
+</head>
+
+<body>
+    <button onclick="printSquare()">Print</button><br />
+    <p id="display"></p>
+    <script>
+        function printSquare() {
+
+            let row = " ";
+            for (let i = 1; i <= 5; i++) {
+
+                row = row + "*";
+
+                document.getElementById("display").innerHTML += row + "<br/>";
+
+            }
+        }
+    </script>
+</body>
+
+</html>

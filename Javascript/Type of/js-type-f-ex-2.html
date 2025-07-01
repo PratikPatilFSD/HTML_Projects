@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Input Output Class</title>
+    <style>
+        /*Input output field css*/
+        .input-otput-field {
+            width: 80%;
+            height: 100%;
+            margin-left: 80px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        /*Input  field css*/
+        .input-field {
+            width: 400px;
+            height: 100px;
+            color: white;
+            background-color: darkorchid;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Input  field heading css*/
+        h3 {
+            text-align: center;
+            color: white;
+            
+        }
+
+        /*Input css*/
+        input {
+            width: 300px;
+            height: 50px;
+           margin-left: 50px;
+            margin-top: 30px;
+            font-size: 15px;
+            border-radius: 10px;
+        }
+
+        /*Select input css*/
+       
+
+        /*Input button css*/
+        button {
+            width: 300px;
+            height: 50px;
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        /*Output field css*/
+        .output-field {
+            width: 400px;
+            height: 240px;
+            background-color: darkgoldenrod;
+            border-radius: 10px;
+            color: white;
+            
+            padding-left: 20px;
+            box-shadow: 5px 5px 5px;
+        }
+         #string,
+         #boolean,
+         #number{
+            font-size: 15px;
+         }
+        /*Submit button css*/
+        submit-button {
+            width: 140px;
+            height: 50px;
+            background-color: darkcyan;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        /*Submit button hover effect css*/
+        submit-button:hover {
+            border-style: solid;
+            border-width: 2px;
+            border-color: white;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Input output field-->
+    <div class="input-otput-field">
+
+        <!--Input field-->
+        <div class="input-field">
+            
+            <button class="submit-button" onclick="inputFunction()">Click to find type of Datatype</button>
+
+        </div>
+
+        <!--Output field-->
+        <div class="output-field">
+
+            <!--Output field heading-->
+            <h2>Display</h2>
+            <p id="number"></p>
+            <p id="boolean"></p>
+            <p id="string"></p>
+
+        </div>
+
+
+    </div>
+
+    <!--Output field script-->
+    <script>
+        function inputFunction() {
+           
+            let num1 = 42 ;
+            let  dataType1 = typeof num1;
+           
+            document.getElementById('number').innerHTML = "Value is :"+num1 + "<br/> Datatype is: " + dataType1;
+
+           let bool = true ;
+            let  dataType2 = typeof bool;
+           
+            document.getElementById('boolean').innerHTML = "Value is :"+bool + " <br/> Datatype is: " + dataType2;
+           let string = "Good Morning" ;
+            let  dataType3 = typeof string;
+           
+            document.getElementById('string').innerHTML = "Value is :"+string + " <br/>Datatype is: " + dataType3;
+
+        }
+    </script>
+</body>
+
+</html>

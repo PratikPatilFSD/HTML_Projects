@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameters class two</title>
+</head>
+
+<body>
+    <div id="result"></div><br />
+    <div id="display"></div><br />
+    <div id="show"></div><br />
+    <div id="show-two"></div>
+    
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+
+        function diff(a, b) {
+            return a - b;
+        }
+
+        function calculator(x, y) {
+            let add = sum(x, y);
+            let sub = diff(x, y);
+            return add
+        }
+        let result = calculator(20, 10);
+        console.log(result);
+        document.getElementById("result").innerHTML = "Sum is: " + result;
+
+
+        //Factorial using parameters
+
+        function factorial(num) {
+            if (num == 0) {
+                return 1;
+            }
+            else {
+                return num * factorial(num - 1);
+            }
+        }
+        let output = factorial(3);
+        console.log(output);
+        document.getElementById("display").innerHTML = "Factorial is: " + output;
+
+
+        //Decrement using parameters
+        function decrementNumber(number) {
+            if (number <= 0) {
+                console.log("end");
+            }
+            else {
+                document.getElementById("show").innerHTML += number + ", ";
+                console.log(number);
+                decrementNumber(number - 1);
+            }
+            return 0;
+        }
+
+        let output2 = decrementNumber(10);
+        console.log(output2);
+
+        //Increment using parameter function
+
+        function incrementNumber(start, end) {
+            if (start <= end) {
+                document.getElementById("show-two").innerHTML += start + ", ";
+                console.log(start);
+                incrementNumber(start + 1, end);
+
+            }
+            else {
+                console.log("end");
+            }
+            return 0;
+        }
+
+        let output3 = incrementNumber(1, 10);
+        console.log(output3);
+
+        function printNumber(start,end){
+            if (start <= end) {
+                document.getElementById("show-two").innerHTML += start + ", ";
+                console.log(start);
+                printNumber(start + 1, end);
+
+            }
+             else {
+                console.log("end");
+            }
+            return 0;
+        }
+        let output4 = printNumber(1, 10);
+        console.log(output4);
+    </script>
+</body>
+
+</html>

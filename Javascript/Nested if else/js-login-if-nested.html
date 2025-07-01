@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Checker</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+             background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            width: 60%;
+            height: 80%;
+           
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 2px 2px 3px;
+        }
+
+        input {
+            width: 80%;
+            height: 13%;
+            font-size: 20px;
+        }
+
+        button {
+            width: 82%;
+            height: 15%;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #result {
+            width: 78%;
+            height: 25%;
+            background-color: blanchedalmond;
+            text-align: justify;
+            padding-left: 20px;
+            align-content: center;
+            border-style: solid;
+            border-color: black;
+            font-size: 18px;
+            color: rgb(231, 43, 43);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Page using if Nested</h1><br /><br />
+
+        <input type="text" id="input-one" placeholder="Enter username"><br/>
+        <input type="text" id="input-two" placeholder="Enter password">
+        <button onclick="checkLogin()">Login</button><br />
+        <p id="result">
+
+        </p>
+    </div>
+    <script>
+        function checkLogin() {
+
+            let username = document.getElementById("input-one").value;
+            let password = Number(document.getElementById("input-two").value);
+
+
+            if (username == "pripat2610") {
+
+                if (password == "123456") {
+
+                    document.getElementById("result").innerHTML = "Login is successful ✅";
+                    document.getElementById("result").style.color = "Green";
+
+                }
+                else {
+
+                    document.getElementById("result").innerHTML = "Incorrect password ❌";
+
+                }
+            }
+            else {
+                document.getElementById("result").innerHTML = "Incorrect username ❌";
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

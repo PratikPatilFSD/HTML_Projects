@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather check using Ladder if else</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://rainmeterthemes.com/wp-content/uploads/2023/10/Weather-Zone-1024x576.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 60%;
+            height: 80%;
+            margin-left: 100px;
+            background-color: rgb(84, 83, 85);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 80%;
+            height: 13%;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            width: 82%;
+            height: 14%;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            border: none;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #result {
+            width: 81%;
+            height: 25%;
+            background-color: darkgrey;
+            text-align: center;
+            align-content: center;
+            border-style: solid;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Weather Checker</h1><br /><br />
+
+        <input type="text" id="input" placeholder="Enter temperature in degree celcius ">
+        <button onclick="weatherCheck()">Check Weather</button><br />
+        <p id="result">Display Weather</p>
+    </div>
+    <script>
+        function weatherCheck() {
+
+            let temp = document.getElementById("input").value;
+            let display = document.getElementById("result").innerHTML;
+
+
+            if (temp >= 40) {
+                display = "Weather is Very Hot 🔥";
+                document.getElementById('result').style.backgroundColor = "#FFE1E0";
+                document.getElementById("result").style.color = "red";
+
+            }
+            else if (30 <= temp && temp <= 40) {
+                display = "Weather is Hot 💥";
+                document.getElementById('result').style.backgroundColor = "#F1BA88";
+                document.getElementById("result").style.color = "#4A102A";
+            }
+            else if (20 <= temp && temp <= 30) {
+                display = "Weather is Warm 🌞";
+                document.getElementById('result').style.backgroundColor = "darkgrey";
+                document.getElementById("result").style.color = "#102E50";
+            }
+            else if (10 <= temp && temp <= 20) {
+                display = "Weather is Cool ❄️";
+                document.getElementById('result').style.backgroundColor = "#EDF4C2";
+                document.getElementById("result").style.color = "#F3C623";
+            }
+            else if (0 <= temp && temp <= 10) {
+                display = "Weather is Cold 🌬️";
+                document.getElementById('result').style.backgroundColor = "#FFFBDA";
+                document.getElementById("result").style.color = "#6B240C";
+            }
+
+            else {
+                display = "Weather is Freezing 🏔️";
+                document.getElementById('result').style.backgroundColor = "lightskyblue";
+                document.getElementById("result").style.color = "#C07F00";
+            }
+            document.getElementById("result").innerHTML = display;
+        }
+    </script>
+</body>
+
+</html>

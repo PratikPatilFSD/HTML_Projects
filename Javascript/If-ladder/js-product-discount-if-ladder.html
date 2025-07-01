@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product discount using ladder if else</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://i.pinimg.com/736x/56/7c/ae/567cae7c5e5431909718620b5a2a9aa3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            width: 60%;
+            height: 80%;
+            margin-left: 270px;
+            background-color: rgb(131, 170, 158);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 2px 2px 3px;
+        }
+
+        input {
+            width: 80%;
+            height: 13%;
+            font-size: 20px;
+        }
+
+        button {
+            width: 82%;
+            height: 15%;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        #result {
+            width: 78%;
+            height: 25%;
+            background-color: white;
+            text-align: justify;
+            padding-left: 20px;
+            align-content: center;
+            border-style: solid;
+            border-color: black;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Shopping Discount Calculator</h1><br /><br />
+
+        <input type="text" id="input" placeholder="Enter shopping amount in rupees">
+        <button onclick="discCal()">Calculate Discount</button><br />
+        <p id="result">
+
+        </p>
+    </div>
+    <script>
+        function discCal() {
+
+            let amt = document.getElementById("input").value;
+            let disc = document.getElementById("result").innerHTML;
+            let totalamtpayable = document.getElementById("result").innerHTML;
+
+            if (amt >= 10000) {
+                disc = 0.25 * amt;
+                totalamtpayable = amt - disc;
+                document.getElementById("result").innerHTML = "Origional amount:₹" + amt + " <br/> Discount:₹ " + disc + " <br/> Total Payable amount:₹" + totalamtpayable;
+                document.getElementById("result").style.color = "#F3C623";
+
+            }
+            else if (10000 > amt && amt >= 6999) {
+                disc = 0.20 * amt;
+                totalamtpayable = amt - disc;
+                document.getElementById("result").innerHTML = "Origional amount:₹" + amt + " <br/> Discount:₹" + disc + " <br/> Total Payable amount:₹" + totalamtpayable;
+                document.getElementById("result").style.color = "#F3C623";
+            }
+            else if (6999 > amt && amt >= 4999) {
+                disc = 0.15 * amt;
+                totalamtpayable = amt - disc;
+                document.getElementById("result").innerHTML = "Origional amount:₹" + amt + " <br/> Discount:₹" + disc + " <br/> Total Payable amount:₹" + totalamtpayable;
+                document.getElementById("result").style.color = "#F3C623";
+            }
+            else if (4999 > amt && amt >= 2999) {
+                disc = 0.10 * amt;
+                totalamtpayable = amt - disc;
+                document.getElementById("result").innerHTML = "Origional amount:₹" + amt + " <br/> Discount:₹" + disc + " <br/> Total Payable amount:₹" + totalamtpayable;
+                document.getElementById("result").style.color = "#F3C623";
+            }
+            else if (2999 > amt && amt >= 999) {
+                disc = 0.05 * amt;
+                totalamtpayable = amt - disc;
+                document.getElementById("result").innerHTML = "Origional amount:₹" + amt + " <br/> Discount:₹" + disc + " <br/> Total Payable amount:₹" + totalamtpayable;
+                document.getElementById("result").style.color = "#F3C623";
+            }
+            else if (999 > amt && amt > 0) {
+                disc = 0 * amt;
+                totalamtpayable = amt - disc;
+                document.getElementById("result").innerHTML = "Origional amount:₹" + amt + " <br/> Discount:₹" + disc + " <br/> Total Payable amount:₹" + totalamtpayable;
+                document.getElementById("result").style.color = "#F3C623";
+            }
+            else {
+                document.getElementById("result").innerHTML = "Invalid Amount Entered";
+                document.getElementById("result").style.color = "red";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

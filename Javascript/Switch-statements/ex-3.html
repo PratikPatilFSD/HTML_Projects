@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Example</title>
+</head>
+
+<body>
+
+    <p id="display"></p>
+    <button onclick="switchExample()">Click here</button>
+    <script>
+        function switchExample() {
+            let days = Number(prompt("Enter number 0 to 6"));
+
+            switch (days) {
+                case 0:
+                    display = "Today is Sunday";
+                    alert(display);
+                    break;
+
+                case 1:
+                    display = "Today is Monday";
+                    alert(display);
+                    break;
+
+                case 2:
+                    display = "Today is Tuesday";
+                    alert(display);
+                    break;
+
+                case 3:
+                    display = "Today is Wednesday";
+                    alert(display);
+                    break;
+
+                case 4:
+                    display = "Today is Thursday";
+                    alert(display);
+                    break;
+
+                case 5:
+                    display = "Today is Friday";
+                    alert(display);
+                    break;
+
+                case 6:
+                    display = "Today is Saturday";
+                    alert(display);
+                    break;
+
+                default:
+                    display = "Invalid day";
+                    alert(display);
+            }
+        }
+    </script>
+</body>
+
+</html>

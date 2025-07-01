@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Pricing</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 80%;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: rgb(57, 110, 110);
+            margin-left: 150px;
+            margin-right: 200px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /* Heading css*/
+        h2 {
+            color: white;
+            font-size: 32px;
+        }
+
+        /*Display css*/
+        .display {
+            width: 60%;
+            height: 100px;
+            background-color:brown;
+            margin-left: 143px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display text css*/
+        span {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        label{
+            font-size: 17px;
+            margin-right: 324px;
+            color: white;
+        }
+        input {
+            width: 59%;
+            height:40%;
+            font-size: 15px;
+           
+        }
+
+        /* Convert age operation css*/
+        .operation {
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 75%;
+            height: 130%;
+            background-color: brown;
+            margin-left: 142px;
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+        <h2>🎬 Movie Ticket Pricing</h2>
+
+        <!--Display-->
+        <div class="display">
+            <span id="display"></span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+            <label>Enter your age :</label><br /><br/>
+            <input type="number" id="input-one" />
+        </div>
+
+        <!--Greeting operation button-->
+        <div class="operation">
+            <button class="submit-button" onclick="checkTicketPrice()">Check Ticket Price</button>
+
+        </div>
+
+        <!--JavaScript start-->
+        <script>
+
+            //getTime Function
+            function checkTicketPrice() {
+                let age = Number(document.getElementById("input-one").value);
+
+                switch (true) {
+                    case (age >= 0 && age <= 12):
+                        document.getElementById("display").innerHTML = "👶 Child :"+age + "years"+ "<br/><br/> Ticket Price:₹100";
+                        break;
+
+                    case (age >= 13 && age <= 19):
+                        document.getElementById("display").innerHTML = "🧑 Teen :"+age + "years"+ "<br/><br/> Ticket Price:₹150";
+                        break;
+
+                    case (age >= 20 && age <= 59):
+                        document.getElementById("display").innerHTML = "👨 Adult :"+age + "years"+ "<br/><br/> Ticket Price:₹200";
+                        break;
+
+                    case (age >= 22 && age <= 24):
+                        document.getElementById("display").innerHTML = "👴 Senior :"+age + "years"+ "<br/><br/> Ticket Price:₹120";
+                        break;
+
+                    default:
+                        document.getElementById("display").innerHTML = "❌ Invalid age";
+                        break;
+                }
+            }
+
+        </script>
+        <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->
+</body>
+
+</html>

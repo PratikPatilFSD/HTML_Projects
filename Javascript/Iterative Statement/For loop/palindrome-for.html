@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome class</title>
+</head>
+
+<body>
+    <h1 id="display">Display</h1>
+    <button onclick="checkString()">Check String</button>
+    <script>
+
+
+        //while loop for string is palidrome or not
+        function checkString() {
+            //assign input
+            let str =prompt("Enter your string") ;
+
+
+            //convert case upper to lower
+            let strLower = str.toLowerCase();
+
+            //finding length
+            let strLength = strLower.length;
+
+           
+            for ( let i = 0;i < strLength / 2; i++) {
+                if (strLower[i] !== strLower[strLength - 1 - i]) {
+                    document.getElementById("display").innerHTML = "String is not a Palindrome";
+                    return false;
+                }
+               
+            }
+
+            document.getElementById("display").innerHTML = "String is a Palindrome";
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

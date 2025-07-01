@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladder if else</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 40%;
+            height: 40%;
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 80%;
+            height: 15%;
+            font-size: 20px;
+        }
+
+        button {
+            width: 80%;
+            height: 15%;
+            margin-top: 20px;
+            font-size: 25px;
+            background-color: green;
+            color: white;
+        }
+
+        #result {
+           
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="text" id="input" placeholder="Enter marks">
+        <button onclick="marksToGrade()">Convert grade to marks</button>
+        <p id="result">Display</p>
+    </div>
+    <script>
+        function marksToGrade(){
+            let marks = document.getElementById("input").value;
+        let display = document.getElementById("result").innerHTML;
+
+        if (marks >= 80) {
+            display = "A Grade";
+
+        }
+        else if (marks >= 65) {
+            display = "B Grade";
+        }
+        else if (marks >= 50) {
+            display = "C Grade";
+        }
+        else if (marks >= 35) {
+            display = "D Grade";
+        }
+        else {
+            display = "Fail";
+        }
+        document.getElementById("result").innerHTML = display;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print sum of odd num from 2 to 50</title>
+</head>
+
+<body>
+    <button onclick="printSumOfOdd()">Print</button><br />
+    <p id="display"></p>
+    <script>
+        function printSumOfOdd() {
+            let sum = 0;
+            for (let num = 2; num <= 50; num++) {
+                if(num % 2 !== 0){
+                    sum = sum + num;
+                    console.log(num);
+                }
+               
+                document.getElementById("display").innerHTML = "The sum of odd numbers between 2 and 50 is "+sum;
+
+            }
+        }
+    </script>
+</body>
+
+</html>

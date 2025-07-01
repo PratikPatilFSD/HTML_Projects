@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameters</title>
+</head>
+
+<body>
+
+    <h2>Calculator Result</h2>
+    <div id="result"></div> 
+
+    <script>
+        // For sum
+        function sum(a, b) {
+            console.log(a + b);
+            return a + b;
+        }
+
+        // For difference
+        function diff(a, b) {
+            console.log(a - b);
+            return a - b;
+        }
+
+        // For multiplication
+        function mul(a, b) {
+            console.log(a * b);
+            return a * b;
+        }
+
+        // For division
+        function div(a, b) {
+            console.log(a / b);
+            return a / b;
+        }
+
+        function calculator() {
+            let add = sum(10, 20);
+            let sub = diff(30, 20);
+            let multi = mul(30, 20);
+            let divi = div(30, 15);
+            return add;
+        }
+
+        let result = calculator();
+        console.log(result);
+        document.getElementById("result").innerHTML = "Sum is: " + result;
+    </script>
+</body>
+
+</html>

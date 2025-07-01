@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome string checker</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-container {
+            width: 60%;
+            height: 70%;
+            background-color: white;
+            border-color: black;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 93%;
+            height: 90%;
+            margin: 20px;
+            background-color: #946388;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input {
+            width: 80%;
+            height: 15%;
+            font-size: 18px;
+        }
+
+        button {
+            width: 81.5%;
+            height: 15%;
+            margin-top: 20px;
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        #result {
+            width: 80%;
+            height: 15%;
+            background-color: rgb(231, 231, 228);
+            text-align: center;
+            align-content: center;
+            border-style: solid;
+            font-size: 18px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h2>Palindrome String Checker</h2>
+            <input type="text" id="inputname" placeholder="Enter your string"><br />
+
+            <button onclick="checkString()">Check String</button><br />
+            <p id="result">Display</p>
+        </div>
+    </div>
+    <script>
+
+
+       
+//while loop for string is palidrome or not
+        function checkString() {
+
+            //assign input
+            let str = document.getElementById("inputname").value;
+
+            //convert case upper to lower
+            let strLower = str.toLowerCase();
+
+            //finding length
+            let strLength = strLower.length;
+
+            let i = 0;
+            while (i < strLength / 2) {
+                if (strLower[i] !== strLower[strLength - 1 - i]) {
+                    document.getElementById("result").innerHTML = "String is not a Palindrome";
+                    return false;
+                }
+                i++;
+            }
+            document.getElementById("result").innerHTML = "String is a Palindrome";
+        }
+    </script>
+</body>
+
+</html>

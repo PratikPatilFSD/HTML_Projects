@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Check using if Nested</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            width: 60%;
+            height: 80%;
+            background-color: rgb(131, 170, 158);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 2px 2px 3px;
+        }
+
+        input {
+            width: 81%;
+            height: 13%;
+            font-size: 20px;
+        }
+
+        button {
+            width: 82%;
+            height: 15%;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: green;
+            color: white;
+            border-radius: 5px;
+            
+        }
+        button:hover{
+            cursor: pointer;
+        }
+
+        #result {
+            width: 78%;
+            height: 25%;
+            background-color: rgb(100, 107, 107);
+            text-align: justify;
+            padding-left: 20px;
+            text-align: center;
+            align-content: center;
+            border-style: solid;
+            border-color: black;
+            font-size: 18px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Number Check using if Nested</h1><br/><br/>
+
+        <input type="number" id="input" placeholder="Enter number">
+        <button onclick="checkNumber()">Check</button><br/>
+        <p id="result">
+           
+        </p>
+    </div>
+    <script>
+        function checkNumber() {
+
+            let num = Number(document.getElementById("input").value);
+           
+
+            if (num == 0) {
+                  document.getElementById("result").innerHTML = "The number is neutral";
+            }
+            else{
+                if (num > 0) {
+               
+                  document.getElementById("result").innerHTML = "The number is positive";
+                  
+            }
+            else {
+              
+                 document.getElementById("result").innerHTML =  "The number is negative";
+                 
+            }}
+                
+
+            }
+             
+        
+            
+           
+        
+    </script>
+</body>
+
+</html>

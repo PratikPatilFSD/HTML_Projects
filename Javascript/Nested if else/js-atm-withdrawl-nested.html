@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM money withdrawn</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://images3.alphacoders.com/243/thumb-1920-24307.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*Universal selector css*/
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /*Container css*/
+        .container {
+            width: 40%;
+            height: 80%;
+            background-color: rgb(55, 126, 104);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 2px 2px 3px;
+        }
+
+        /*Display css*/
+        .display {
+            width: 72%;
+            height: 90px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            margin-top: 20px;
+            text-align: center;
+            align-content: center;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display text css*/
+        span {
+            font-size: 16px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        input {
+            width: 71.5%;
+            height: 15%;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        /*Withdrawn button css*/
+        button {
+            width: 73%;
+            height: 16%;
+            margin-top: 20px;
+            font-size: 16px;
+            background-color: rgb(57, 121, 57);
+            color: white;
+            border-radius: 5px;
+        }
+
+        /*Withdrawn button hover effect css*/
+        button:hover {
+            cursor: pointer;
+            background-color: green;
+        }
+
+        /*Withdrawn message  css*/
+        #result {
+            width: 69%;
+            height: 20%;
+            background-color: rgb(138, 51, 116);
+            text-align: center;
+            padding-left: 20px;
+            align-content: center;
+            font-size: 16px;
+            color: rgb(245, 121, 5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Container-->
+    <div class="container">
+        <h2>ATM Withdrawn Machine</h2><br /><br />
+
+        <!--Display-->
+        <div class="display">
+            <span id="display"></span>
+        </div><br /><br /><br /><br />
+
+
+        <!--Input variable-->
+        <input type="number" id="input-one" placeholder="Enter amount to be withdrawn">
+
+        <!--Withdrawn money button-->
+        <button onclick="withdrawMoney()">Withdraw money</button><br /><br />
+
+        <!--Message display-->
+        <p id="result"></p>
+    </div>
+
+    <script>
+        let balance = 10000;
+        document.getElementById("display").innerHTML = "Current balance is : ₹" + balance;
+
+        //Withdrawn function
+        function withdrawMoney() {
+            let amt = Number(document.getElementById("input-one").value);
+            document.getElementById("display").innerHTML = "Current balance is : ₹" + (balance - amt);
+
+
+            if ((amt > 0) && (amt % 100 == 0)) {
+
+                if ((amt <= balance)) {
+                    document.getElementById("result").innerHTML = "Withdrawn is successful";
+                }
+                else {
+                    document.getElementById("result").innerHTML = "Insufficient funds";
+                }
+            }
+            else {
+                document.getElementById("result").innerHTML = "Enter valid amount";
+                document.getElementById("display").innerHTML = "Current balance is : ₹" + balance;
+            }
+        }
+    </script>
+</body>
+
+</html>

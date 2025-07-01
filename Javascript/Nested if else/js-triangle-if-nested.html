@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type of triangle</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+             background-image: url(https://as2.ftcdn.net/jpg/10/68/84/85/1000_F_1068848587_0sPWnL9jVWit4zGw2Mspm3iLLdKiJF2W.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            width: 60%;
+            height: 80%;
+            background-color: rgb(55, 126, 104);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0px 2px 2px 3px;
+        }
+
+        input {
+            width: 80%;
+            height: 10%;
+            font-size: 18px;
+        }
+
+        button {
+            width: 82%;
+            height: 15%;
+            margin-top: 20px;
+            font-size: 20px;
+            background-color: rgb(57, 121, 57);
+            color: white;
+            border-radius: 5px;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: green;
+        }
+
+        #result {
+            width: 78%;
+            height: 25%;
+            background-color: rgb(250, 216, 216);
+            text-align: center;
+            padding-left: 20px;
+            align-content: center;
+            border-style: solid;
+            border-color: black;
+            font-size: 18px;
+            color:rgb(219, 10, 184);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Triangle type using if Nested</h2><br /><br />
+
+        <input type="number" id="input-one" placeholder="Enter lenght of first side in cms"><br/>
+        <input type="number" id="input-two" placeholder="Enter lenght of second side in cms"><br/>
+        <input type="number" id="input-three" placeholder="Enter lenght of third side in cms">
+        <button onclick="checkTypeTriangle()">Check type of triangle</button><br />
+        <p id="result">
+
+        </p>
+    </div>
+    <script>
+        function checkTypeTriangle() {
+            let side1 = Number(document.getElementById("input-one").value);
+            let side2 = Number(document.getElementById("input-two").value);
+            let side3 = Number(document.getElementById("input-three").value);
+
+
+            if ((side1 == side2) && (side2 == side3) && (side1==side3)) {
+                document.getElementById("result").innerHTML = "The triangle is Equilateral";
+            }
+
+            else{
+
+                if ((side1 !== side2) && (side2 == side3) || (side1==side2) && (side2 !==side3) || (side1==side3) && (side2!==side3)) {
+
+                    document.getElementById("result").innerHTML = "The triangle is Isosceles";
+
+                }
+                else {
+
+                    document.getElementById("result").innerHTML = "The triangle is Scaler";
+
+                }
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

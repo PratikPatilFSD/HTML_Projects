@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Example</title>
+</head>
+
+<body>
+    
+    <p id="display"></p>
+    <button onclick="switchExample()">Click here</button>
+    <script>
+        function switchExample() {
+            let fruits = prompt("Enter fruit name");
+
+            switch (fruits) {
+                case "apple":
+                    display ="Apple is red";
+                    alert(display);
+                    break;
+
+                case "banana":
+                    display="Banana is yellow";
+                    alert(display);
+                    break;
+
+                case "orange":
+                    display="Orange is orange";
+                    alert(display);
+                    break;
+
+                default:
+                    display="Invalid fruit";
+                    alert(display);
+            }
+        }
+    </script>
+</body>
+
+</html>
