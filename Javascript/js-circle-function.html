@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations in Two Variables</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;      
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 90%;
+            text-align: center;
+            color: white;
+            background-color:rgb(1, 102, 102) ;
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px black;
+        }
+
+        /*Display css*/
+        .display {
+            width: 80%;
+            height: 150px;
+            border-radius: 5px;
+            background-color: linen;
+            margin-left: 65px;
+            margin-top: 20px;
+            align-content: center;
+             box-shadow: 5px 5px 5px black;
+        
+             
+        }
+
+        /*Display text css*/
+         span {
+            font-size: 40px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        input {
+            width: 40%;
+            height: 30%;
+            margin-top: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        /*Mathematical operations css*/
+        .operation{
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 55%;
+            height: 80%;
+            background-color: brown;
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-top: 20px;  
+            box-shadow: 5px 5px 5px black; 
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+        <h1>Circle Calculation in JavaScript</h1>
+
+        <!--Display-->
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+
+              <input type="number" id="input-one" placeholder="Enter a radius of circle" />
+            
+        </div>
+
+        <!--Maathematical operations button-->
+        <div class="operation">
+            <button class="submit-button" onclick="dia()">Diameter</button>
+            <button class="submit-button" onclick="circum()">Circumference</button>
+            <button class="submit-button" onclick="area()">Area</button>
+        </div>
+        
+        <!--JavaScript start-->
+        <script>
+
+           
+            function dia() {
+                let num1 = Number(document.getElementById("input-one").value);
+                
+                let dia = (2*(num1));
+                document.getElementById("display").innerHTML = dia;
+            }
+             function circum() {
+                let num1 = Number(document.getElementById("input-one").value);
+                
+                let circum = (2*(22/7)*(num1));
+                document.getElementById("display").innerHTML = circum;
+            }
+             function area() {
+                let num1 = Number(document.getElementById("input-one").value);
+                
+                let area = ((22/7)*(num1)*(num1));
+                document.getElementById("display").innerHTML = area;
+            }
+
+
+           
+    
+            
+        </script>
+         <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->  
+</body>
+
+</html>

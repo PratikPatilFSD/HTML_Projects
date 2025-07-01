@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold coins add and substract</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 97%;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: white;
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 0px 5px 5px 5px;
+        }
+
+        img {
+            margin-left: 200px;
+            width: 300px;
+            height: 200px;
+        }
+
+        /*Display css*/
+        .display-coin {
+            width: 80%;
+            height: 60px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 65px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display text css*/
+        #display {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        input {
+            width: 30%;
+            height: 25%;
+            margin-top: 50px;
+            font-size: 18px;
+        }
+
+        /*Mathematical operations css*/
+        .operation {
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        button {
+            width: 95%;
+            height: 90%;
+            background-color: gold;
+            border-radius: 5px;
+            margin-left: 71px;
+            margin-top: 20px;
+        }
+
+        /*Submit button hover effect css*/
+        button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .display-two {
+            width: 80%;
+            height: 80px;
+            border-radius: 5px;
+            background-color: lightgoldenrodyellow;
+            margin-left: 65px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        #add-coin,
+        #substract-coin {
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+        
+        <!--Main container heading-->
+        <img src="gold -coin.png" width="200px" height="150px" alt="">
+
+        <!--Display-->
+        <div class="display-coin">
+            <p id="display">Gold coins in the Chest</p>
+        </div>
+
+
+
+        <!--Maathematical operations button-->
+        <div class="operation">
+            <button onclick="one()">+ Add coin</button>
+            <button onclick="two()">- Substract coin</button>
+
+        </div>
+        <!--Display two-->
+        <div class="display-two">
+            <p id="add-coin"></p>
+            <p id="substract-coin"></p>
+        </div>
+
+        <!--JavaScript start-->
+
+        <script>
+            let coin = 0;
+            document.getElementById("display").innerHTML ="Coins in the box: " +coin;
+
+            // Addition Function
+            function one() {
+                let addcoin = Number(prompt("Enter the coin"));
+                coin += addcoin;
+                document.getElementById("display").innerHTML ="Coins in the box: " +coin;
+                document.getElementById("add-coin").innerHTML = "🟡 Added coins: " + addcoin;
+            }
+
+            // Subtraction Function
+            function two() {
+                let subcoin = Number(prompt("Enter the coin"));
+                coin -= subcoin;
+                document.getElementById("display").innerHTML = "Coins in the box: " +coin;
+                document.getElementById("substract-coin").innerHTML = "⚪ Subtracted coins: " + subcoin;
+            }
+        </script>
+
+
+        <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->
+</body>
+
+</html>

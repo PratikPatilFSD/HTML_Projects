@@ -4,7 +4,14 @@
 <head>
     <title>Input Output Class</title>
     <style>
-        
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://i.pinimg.com/736x/0a/5e/74/0a5e74e5007a1000b57248d0694dc781.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         /*Input output field css*/
         .input-otput-field {
             width: 80%;
@@ -82,9 +89,9 @@
             margin-top: 20px;
             border: none;
         }
-       
+
         /*Submit button hover effect css*/
-        button:hover{
+        button:hover {
             border-style: solid;
             border-width: 2px;
             border-color: white;
@@ -95,7 +102,7 @@
 </head>
 
 <body>
-    
+
     <!--Input output field-->
     <div class="input-otput-field">
 
@@ -136,19 +143,19 @@
     <script>
         function inputFunction() {
             var name = document.getElementById('name').value;
-            document.getElementById('display-name').innerHTML ="Name: "+name;
-            
+            document.getElementById('display-name').innerHTML = "Name: " + name;
+
             var age = document.getElementById('age').value;
-            document.getElementById('display-age').innerHTML ="Age: "+age;
-           
+            document.getElementById('display-age').innerHTML = "Age: " + age;
+
             var gender = document.getElementById('gender').value;
-            document.getElementById('display-gender').innerHTML ="Gender: "+gender;
-           
+            document.getElementById('display-gender').innerHTML = "Gender: " + gender;
+
             var email = document.getElementById('email').value;
-            document.getElementById('display-email').innerHTML ="Email: "+email;
-           
+            document.getElementById('display-email').innerHTML = "Email: " + email;
+
             var course = document.getElementById('course').value;
-            document.getElementById('display-course').innerHTML ="Course: "+course;
+            document.getElementById('display-course').innerHTML = "Course: " + course;
 
         }
     </script>

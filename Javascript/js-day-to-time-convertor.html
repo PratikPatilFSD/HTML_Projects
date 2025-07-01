@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days into hours , minutes , seconds and weeks</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 80%;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: rgb(57, 110, 110);
+            margin-left: 150px;
+            margin-right: 200px;
+            margin-top: 40px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /* Heading css*/
+        h2 {
+            color: white;
+            font-size: 32px;
+        }
+
+        /*Display css*/
+        .display {
+            width: 60%;
+            height: 150px;
+            border-radius: 10px;
+            background-color: rgb(221, 168, 98);
+            margin-left: 143px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display text css*/
+        span {
+            font-size: 20px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        input {
+            width: 49%;
+            height: 50%;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        /* Convert time operation css*/
+        .operation {
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 63%;
+            height: 100%;
+            background-color: brown;
+            border-radius: 5px;
+            margin-left: 176px;
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+        <h2>Time Converter</h2>
+
+        <!--Display-->
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+            <input type="number" id="input-one" placeholder="Enter number of days" />
+        </div>
+
+        <!--Convert time operation button-->
+        <div class="operation">
+            <button class="submit-button" onclick="getTime()">Convert time</button>
+
+        </div>
+
+        <!--JavaScript start-->
+        <script>
+
+            //getTime Function
+            function getTime() {
+                let days = Number(document.getElementById("input-one").value);
+                let hours = (24 * days);
+                let min = (24 * 60 * days);
+                let sec = (24 * 60 * 60 * days);
+                let week = (days / 7);
+
+                if (days <= 0) {
+                    document.getElementById("display").innerHTML = "Invalid days.";
+
+                }
+                else {
+                    document.getElementById("display").innerHTML = "Hours: " + hours + " hours" + "<br/> Minutes: " + min + " minutes" + "<br/> Seconds: " + sec + " seconds" + "<br/> Weeks: " + week + " week";
+
+                }
+            }
+
+        </script>
+        <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->
+</body>
+
+</html>

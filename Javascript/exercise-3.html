@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100%;
+            height: 100%;
+            background-color: bisque;
+        }
+        .display-box{
+             width: 100%;
+             height: 50%;
+             color: white;
+             
+             font-weight: bold;
+             background-color: darkcyan;
+             display: grid;
+             text-align: center;
+        }
+        
+       
+        span{
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+           
+            margin-top: 20px;
+        }
+        p{
+            font-size: 30px;
+            font-weight: 400;
+        }
+        .btn-group{
+            width: 100%;
+             height: 50%;
+             margin-top: 50px;
+             display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+             gap: 10px;
+        }
+        .btn{
+            height: 100px;
+            background-color: blueviolet;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 5px 5px 5px;
+        }
+    </style> 
+</head>
+<body>
+    <!--Change color after clicking button-->
+    <div class="main-container" id="main-container">
+
+      <div class="display-box" id="display-box">
+         <span id="title">Welcome to Universal Calender</span>
+         <p id="display"></p>
+      </div>
+      
+      <div class="btn-group">
+        <button class="btn" onclick="displaySunday()" id="sunday">Sunday</button>
+        <button class="btn" onclick="displayMonday()" id="monday">Monday</button>
+        <button class="btn" onclick="displayTuesday()" id="tuesday">Tuesday</button>
+        <button class="btn" onclick="displayWednesday()" id="wednesday">Wednesday</button>
+        <button class="btn" onclick="displayThrusday()" id="thrusday">Thrusday</button>
+        <button class="btn" onclick="displayFriday()" id="friday">Friday</button>
+        <button class="btn" onclick="displaySaturday()" id="saturday">Saturday</button>
+      </div>
+    </div>
+
+    <script>
+         function displaySunday() {
+            document.getElementById("display").innerHTML = "Today is a Sunday!";
+            document.getElementById("main-container").style.backgroundColor = "lightblue";
+            document.getElementById("display-box").style.backgroundColor = "red";
+            document.getElementById("title").style.color = "black";
+            document.getElementById("sunday").style.backgroundColor = "green";
+            document.getElementById("sunday").style.color = "white";
+        }
+        
+        function displayMonday() {
+            document.getElementById("display").innerHTML = "Today is a Monday!";
+            document.getElementById("main-container").style.backgroundColor = "lightgrey";
+            document.getElementById("display-box").style.backgroundColor = "brown";
+             document.getElementById("title").style.color = "black";
+            document.getElementById("monday").style.backgroundColor = "green";
+            document.getElementById("monday").style.color = "white";
+        }
+        function displayTuesday() {
+            document.getElementById("display").innerHTML = "Today is a Tuesday!";
+            document.getElementById("main-container").style.backgroundColor = "lightyellow";
+            document.getElementById("display-box").style.backgroundColor = "yellow";
+             document.getElementById("title").style.color = "black";
+            document.getElementById("tuesday").style.backgroundColor = "green";
+            document.getElementById("tuesday").style.color = "white";
+        }
+        function displayWednesday() {
+            document.getElementById("display").innerHTML = "Today is a Wednesday!";
+            document.getElementById("main-container").style.backgroundColor = "darkblue";
+            document.getElementById("display-box").style.backgroundColor = "lightblue";
+            document.getElementById("title").style.color = "black";
+            document.getElementById("wednesday").style.backgroundColor = "green";
+            document.getElementById("wednesday").style.color = "white";
+        }
+        function displayThrusday() {
+            document.getElementById("display").innerHTML = "Today is a Thrusday!";
+            document.getElementById("main-container").style.backgroundColor = "orange";
+            document.getElementById("display-box").style.backgroundColor = "blue";
+            document.getElementById("title").style.color = "black";
+            document.getElementById("thrusday").style.backgroundColor = "green";
+            document.getElementById("thrusday").style.color = "white";
+        }
+        function displayFriday() {
+            document.getElementById("display").innerHTML = "Today is a Friday!";
+            document.getElementById("main-container").style.backgroundColor = "blue";
+            document.getElementById("display-box").style.backgroundColor = "orange";
+             document.getElementById("title").style.color = "black";
+            document.getElementById("friday").style.backgroundColor = "green";
+            document.getElementById("friday").style.color = "white";
+        }
+        function displaySaturday() {
+            document.getElementById("display").innerHTML = "Today is a Saturday!";
+            document.getElementById("main-container").style.backgroundColor = "lightcoral";
+            document.getElementById("display-box").style.backgroundColor = "yellow";
+             document.getElementById("title").style.color = "black";
+            document.getElementById("saturday").style.backgroundColor = "green";
+            document.getElementById("saturday").style.color = "white";
+        }
+    </script>
+</body>
+</html>

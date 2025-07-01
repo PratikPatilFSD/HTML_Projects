@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice throw</title>
+</head>
+
+<body>
+    <button onclick="result()">Result</button>
+    <p id="display"></p>
+    <script>
+
+
+        function result() {
+            const dice = Math.floor(Math.random() * 6) + 1;
+            console.log('You rolled a ' + dice);
+           
+
+            if (dice == 6) {
+                console.log('You got 6!🥳');
+                document.getElementById("display").innerHTML='You got 6!🥳';
+            } else {
+                console.log('Try again');
+                 document.getElementById("display").innerHTML='Try again';
+            }
+        }
+    </script>
+</body>
+
+</html>

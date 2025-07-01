@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Game</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(https://previews.123rf.com/images/schan/schan1611/schan161101539/66309102-multiplication-table-as-a-background-macro.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            width: 50%;
+            height: 75%;
+            background-color: rgb(57, 99, 99);
+            margin-top: 50px;
+            border-radius: 5px;
+            margin-left: 220px;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 20px;
+
+        }
+
+        span {
+            font-size: 20px;
+        }
+
+        .numbers {
+            width: 430px;
+            height: 40px;
+            background-color: cyan;
+            margin-left: 20px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input {
+            width: 415px;
+            height: 30px;
+            margin: 20px;
+            margin-top: 50px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .answer {
+            width: 430px;
+            height: 40px;
+            background-color: cornflowerblue;
+            margin: 20px;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Multiplication Game</h1>
+        <p>Number 1 =<span id="num-1"></span></p>
+        <p>Number 2 =<span id="num-2"></span></p>
+        <button class="numbers" onclick="getNumber()">Get Numbers</button><br />
+
+        <input type="number" id="input" placeholder="Enter your answer"><br /><br />
+        <button class="answer" onclick="checkAnswer()">Submit Answer</button>
+
+        <p id="result"></p>
+        <script>
+            let num1 = 0;
+            let num2 = 0;
+            let multiplicatin = 0;
+
+
+            function getNumber() {
+                let num1 = Math.floor(Math.random() * 10 + 1);
+                let num2 = Math.floor(Math.random() * 10 + 1);
+
+
+
+                document.getElementById("num-1").innerHTML = num1;
+                document.getElementById("num-2").innerHTML = num2;
+
+                multiplication = num1 * num2;
+
+            }
+            function checkAnswer() {
+                let userAnswer = document.getElementById("input").value;
+                document.getElementById("result").innerHTML =
+                    userAnswer == multiplication;
+            }
+
+        </script>
+    </div>
+</body>
+
+</html>
