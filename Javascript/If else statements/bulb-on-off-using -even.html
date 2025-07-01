@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing bulb image using function</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 600px;
+            margin-left: 100px;
+            background-color: darkseagreen;
+
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        h2 {
+            text-align: center;
+
+        }
+
+        img {
+            margin-left: 120px;
+            align-content: center;
+            margin-bottom: 0%;
+        }
+
+        input {
+            width: 70%;
+            height: 4.5%;
+            margin-left: 60px;
+            margin-top: 50px;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 200px;
+            height: 50px;
+            margin-left: 140px;
+            margin-top: 20px;
+            background-color: blueviolet;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: green;
+            border-radius: 5px;
+            border-color: white;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"><br />
+        <h2>Bulb ON-OFF using Even-Odd number</h2><br />
+        <img src="Bulb is Off.png" id="image" height="300px" width="250px">
+        <input type="number" id="input-one" placeholder="Enter a number">
+        <button onclick="bulbImage()">Check</button>
+
+
+        <script>
+            function bulbImage() {
+                let num = Number(document.getElementById("input-one").value);
+
+                if (num % 2 == 0) {
+                    document.getElementById('image').src = "Bulb is On.png";
+
+                }
+                else {
+                    document.getElementById('image').src = "Bulb is Off.png";
+
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

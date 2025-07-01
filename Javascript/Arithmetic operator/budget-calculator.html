@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical Operations in Two Variables</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 90%;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color: rgb(57, 110, 110);
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Headind css*/
+        h1 {
+            color: white;
+        }
+
+        /*Display css*/
+        .display {
+            width: 60%;
+            height: 100px;
+            border-radius: 5px;
+            background-color: antiquewhite;
+            margin-left: 145px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display text css*/
+        span {
+            font-size: 18px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        #label-one,
+        #label-two,
+        #label-three,
+        #label-four {
+            font-size: 18px;
+            color: white;
+            padding-left: 50px;
+        }
+
+        input {
+            width: 30%;
+            height: 15%;
+            font-size: 16px;
+            margin-left: 130px;
+        }
+
+        /*Mathematical operations css*/
+        .operation {
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 76%;
+            height: 100%;
+            background-color: brown;
+            border-radius: 5px;
+            margin-left: 145px;
+
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+        <h1>Budget Calculator</h1>
+
+        <!--Display-->
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+
+            <label id="label-one">Total income:</label>
+            <input type="number" id="input-one" placeholder="Enter total income" /><br /><br />
+            <label id="label-two">Total rent:</label>
+            <input type="number" id="input-two" placeholder="Enter rent" /><br /><br />
+            <label id="label-three">Total food expenses:</label>
+            <input type="number" id="input-three" placeholder="Enter food expenses" /><br /><br />
+            <label id="label-four">Other expenses:</label>
+            <input type="number" id="input-four" placeholder="Enter other expenses" />
+
+        </div>
+
+        <!--Maathematical operations button-->
+        <div class="operation">
+            <button class="submit-button" onclick="budgetCalculate()">Claculate</button>
+
+        </div>
+
+        <!--JavaScript start-->
+        <script>
+
+            //Budget Calculation Function
+            function budgetCalculate() {
+                let income = Number(document.getElementById("input-one").value);
+                let rent = Number(document.getElementById("input-two").value);
+                let food = Number(document.getElementById("input-three").value);
+                let other = Number(document.getElementById("input-four").value);
+                let totalExpenses = (rent + food + other);
+                let remSavings = (income - totalExpenses);
+                let dailyBudget = (totalExpenses / 30);
+
+                document.getElementById("display").innerHTML = "Total Expenses:₹" + totalExpenses + "<br/>Remaining Savings:₹" + remSavings + "<br/>Daily Budget:₹" + dailyBudget;
+            }
+
+
+        </script>
+        <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->
+</body>
+
+</html>

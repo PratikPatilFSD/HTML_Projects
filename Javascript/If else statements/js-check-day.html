@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day check</title>
+</head>
+
+<body>
+
+    <script>
+
+
+
+
+        let day = new Date().getDay();
+        let date = new Date().getDate();
+    
+        let displayMessage = "";
+
+        if (day == 0 || day == 6) {
+            displayMessage ="Today is weekend";
+        }
+        else {
+            displayMessage ="Today is weekday";
+        }
+        
+        alert(displayMessage + " \n" + date);
+
+    </script>
+</body>
+
+</html>

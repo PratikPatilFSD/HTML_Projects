@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel checker</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Main container css*/
+        .main-container {
+            width: 70%;
+            height: 94%;
+            text-align: center;
+            background-color: #e6e4e3;
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px;
+        }
+
+        h2 {
+            color:black;
+            font-size: 28px;
+        }
+
+        /*Display css*/
+        .display {
+            width: 80%;
+            height: 80px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 73px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;
+        }
+
+        /*Display text css*/
+        span {
+            font-size: 30px;
+            color:darksalmon;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        label{
+            font-size: 16px;
+            margin-right: 90px;
+            
+        }
+         #password-label{
+            font-size: 16px;
+            margin-right: 150px;
+        }
+        input {
+            width: 30%;
+            height: 23%;
+            margin-top: 20px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        /*Mathematical operation css*/
+        .operation {
+            width: 80%;
+            height: 60%;
+           
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 38%;
+            height:80%;
+            background-color:rgb(80, 147, 189);
+            border-radius: 5px;
+            margin-left: 140px;
+            margin-top: 20px;
+            border: none;
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+        <h2>Vowel Checker</h2>
+
+        <!--Display-->
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+ 
+            <label>Enter an alphabet</label><br/>
+            <input type="text" id="input-one" placeholder="Enter an alphabet" /><br><br>
+           
+
+        </div>
+
+        <!--Vowel Checker button-->
+        <div class="operation">
+            <button class="submit-button" onclick="vowelChecker()">Check Vowel</button>
+
+        </div>
+
+        <!--JavaScript start-->
+        <script>
+
+            //Vowel Checker Function
+            function vowelChecker() {
+                let letter = document.getElementById("input-one").value;
+                
+                if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u') {
+                    document.getElementById("display").innerHTML = "An alphabet "+letter+ " is vowel";
+                }
+                else {
+                    document.getElementById("display").innerHTML = "An alphabet "+letter+ " is not vowel";
+
+                }
+            }
+
+
+
+
+        </script>
+        <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->
+</body>
+
+</html>

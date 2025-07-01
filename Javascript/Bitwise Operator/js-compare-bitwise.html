@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even/Odd Validator using bitwise operator</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;      
+        }
+
+        /*Main container css*/
+        .main-container { 
+            width: 50%;
+            height: 80%;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+            background-color:rgb(51, 107, 51) ;
+            margin-left: 150px;
+            margin-right: 200px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+            box-shadow: 5px 5px 5px;
+        }
+        
+        h1{
+            color: white;
+            font-size: 30px;
+        }
+        /*Display css*/
+        .display {
+            width: 60%;
+            height: 100px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+            margin-left: 105px;
+            margin-top: 20px;
+            align-content: center;
+            box-shadow: 5px 5px 5px;   
+        }
+
+        /*Display text css*/
+         span {
+            font-size: 30px;
+            color: black;
+            text-align: center;
+        }
+
+        /*Input variables css*/
+        input {
+            width: 58%;
+            height: 27%;
+            margin-top: 50px;
+            font-size: 15px;
+        }
+
+        /*Mathematical operations css*/
+        .operation{
+            width: 80%;
+            height: 60%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+
+        /*Submit button css*/
+        .submit-button {
+            width: 75%;
+            height: 90%;
+            background-color: darkcyan;
+            border-radius: 5px;
+            margin-left: 105px;
+            margin-top: 20px;   
+        }
+
+        /*Submit button hover effect css*/
+        .submit-button:hover {
+            background-color: green;
+            border-style: solid;
+            border-color: white;
+            border-width: 2px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Main container start-->
+    <div class="main-container">
+
+        <!--Main container heading-->
+        <h1>Even/Odd number checker using Bitwise operator</h1>
+
+        <!--Display-->
+        <div class="display">
+            <span id="display">Display</span>
+        </div>
+
+        <!--Input variables-->
+        <div>
+
+            <input type="number" id="input-one" placeholder="Enter first number " />
+             <input type="number" id="input-two" placeholder="Enter second number " />
+            
+           
+           
+        </div>
+
+        <!--Maathematical operations button-->
+        <div class="operation">
+            <button class="submit-button" onclick="compare()">Validate Number</button>
+            
+        </div>
+        
+        <!--JavaScript start-->
+        <script>
+
+            //Comparison Function
+            function compare() {
+                let num1 = Number(document.getElementById("input-one").value);
+                let num2 = Number(document.getElementById("input-two").value);
+                  let max = (num1 | num2);
+                
+                if (num1 == num2)  {
+                    document.getElementById("display").innerHTML = "Both numbers are same.";
+                   
+                }
+                else  {
+                    document.getElementById("display").innerHTML = "The maximum number is "+ max;
+                   
+                }
+            }
+           
+    
+            
+        </script>
+         <!--JavaScript end-->
+
+    </div>
+    <!--Main container end-->  
+</body>
+
+</html>
