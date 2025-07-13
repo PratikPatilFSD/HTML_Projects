@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array class two</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <script>
+        const fruits = ["apple", "banana", "orange", "mango"];
+        // for (let i =0;i<fruits.length;i++){
+        //     console.log(fruits[i]);
+        //     document.getElementById("display").innerHTML=fruits[i];
+        // }
+
+        //for of 
+
+        // for (const fruit of fruits) {
+        //     console.log(fruit);
+        //     document.getElementById("display").innerHTML += fruit + "<br/>";
+        // }
+
+        let cars = ["Volvo", "BMW", "Mercedes", "Tata", "Honda", "Kia", "Mahindra"];
+        // for (const car of cars) {
+        //     console.log(car);
+        //     document.getElementById("display").innerHTML += car + "<br/>";
+        // }
+
+        //pop()
+        // console.log(cars.pop());
+        // console.log(cars);
+        // document.getElementById("display").innerHTML += cars + "<br/>";
+
+
+        //shift()
+        // console.log(cars.shift());
+        // console.log(cars);
+        // document.getElementById("display").innerHTML += cars + "<br/>";
+
+        //push()
+        cars.push("Audi");
+        console.log(cars);
+        document.getElementById("display").innerHTML += cars + "<br/>";
+
+        //unshift()
+        cars.unshift("Maruti Suzuki");
+        console.log(cars);
+        document.getElementById("display").innerHTML += cars + "<br/>";
+
+        //slice()
+         const newCars = cars.slice(2);
+        // console.log(newCars);
+        // document.getElementById("display").innerHTML += newCars + "<br/>";
+
+        //splice() removing value
+        // const newCarsTwo = cars.splice(2, 1);
+        // console.log(newCarsTwo);
+        // document.getElementById("display").innerHTML += "deleted value: "+newCarsTwo + "<br/>";
+        // document.getElementById("display").innerHTML += "updated array: "+cars + "<br/>";
+
+        //splice() adding value
+        const newCarsTwo = cars.splice(3, 1,"Bajaj","TVS");
+        console.log(newCarsTwo);
+        document.getElementById("display").innerHTML += "added value: "+newCarsTwo + "<br/>";
+        document.getElementById("display").innerHTML += "updated array: "+cars + "<br/>";
+
+    </script>
+</body>
+
+</html>
