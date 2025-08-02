@@ -12,6 +12,7 @@
         /*Portfolio body css*/
         body {
             width: 100vw;
+
         }
 
         /*Portfolio universal selector css*/
@@ -39,8 +40,7 @@
             height: 60px;
             background: linear-gradient(to right,
                     darkblue, black);
-            color: rgb(255, 255, 0);
-            font-weight: bold;
+            color:orange;
             display: grid;
             grid-template-columns: 1fr 1fr;
             position: fixed;
@@ -51,9 +51,10 @@
         .header-logo {
             width: 100%;
             height: 100%;
-            padding-left: 50px;
-            padding-top: 13px;
-            font-size: 25px;
+            font-weight: bold;
+            padding-left: 100px;
+            padding-top: 9px;
+            font-size: 30px;
         }
 
         /*Header section navigation links css*/
@@ -61,7 +62,7 @@
             width: 100%;
             height: 100%;
             padding-top: 20px;
-            font-size: 14px;
+            font-size: 17px;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
         }
@@ -80,7 +81,7 @@
         /*Home section css start*/
         .home-section {
             width: 100%;
-            height: 600px;
+            height: 620px;
             line-height: 1.6;
         }
 
@@ -88,17 +89,26 @@
         .home-text {
             width: 900px;
             height: 100%;
-            padding-top: 100px;
-            margin-left: 50px;
+            padding-top: 120px;
+            margin-left: 100px;
             margin-right: 20px;
             color: white;
             font-weight: bold;
         }
 
+        .intro-text{
+            font-size: 50px;
+        }
+        .profile-text{
+            font-size: 30px;
+        }
+        .connect-text{
+            font-size: 25px;
+        }
         /*Home section chaging font and color css*/
         b,
         span {
-            color: rgb(255, 255, 0);
+            color:orange;
             font-family: 'Courier New', Courier, monospace;
         }
 
@@ -108,7 +118,7 @@
             height: 30px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            color: rgb(255, 255, 0);
+            color:orange;
         }
 
         /*Home section contact icons image width and height css*/
@@ -143,23 +153,23 @@
         .about-me-heading {
             width: 900px;
             height: 50px;
-            color: rgb(255, 255, 0);
+            color:orange;
             padding-top: 100px;
-            margin-left: 50px;
+            margin-left: 100px;
         }
 
         /*About section information css*/
         .about-me-information {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.5fr 0.5fr;
             margin-top: 120px;
         }
 
         /*About section introduction css*/
         .about-me-intro {
-            width: 600px;
-            font-size: 17px;
-            margin-left: 50px;
+            width: 900px;
+            font-size: 20px;
+            margin-left: 100px;
             line-height: 1.7;
         }
 
@@ -167,7 +177,7 @@
         .resume-button {
             width: 170px;
             height: 40px;
-            background-color: rgb(255, 255, 0);
+            background-color:orange;
             border-radius: 3px;
             color: black;
             font-size: 15px;
@@ -185,9 +195,9 @@
 
         /*About section profile photo css*/
         .home-image {
-            width: 300px;
+            width: 400px;
             height: 100%;
-            margin-left: 30px;
+            margin-left: 100px;
         }
 
         /*About section profile photo hover effect css*/
@@ -198,30 +208,31 @@
 
         /*About section profile photo width and border style css*/
         #photo {
-            width: 300px;
+            width: 350px;
+            height: 350px;
             border-style: solid;
             border-width: 2px;
-            border-color: rgb(255, 255, 0);
-            border-radius: 30%;
+            border-color:orange;
+            border-radius: 50%;
         }
 
         /*About section css end*/
 
         /*Skills section css start*/
         .skills-section {
-            width: 900px;
+            width: 1500px;
             height: 1200px;
         }
 
         /*Skills section box css*/
         .skills-box {
-            width: 900px;
+            width: 1200px;
             height: 1200px;
-            margin-left: 50px;
+            margin-left: 200px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            row-gap: 20px;
-            column-gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
             padding-left: 10px;
             padding-right: 10px;
             padding-top: 60px;
@@ -230,24 +241,24 @@
 
         /*Skills section heading css*/
         .skills-heading {
-            width: 900px;
+            width: 1500px;
             height: 20px;
-            color: rgb(255, 255, 0);
-            padding-left: 50px;
+            color:orange;
+            padding-left: 100px;
             padding-top: 100px;
             margin-bottom: 50px;
         }
 
         /*Skills section skills box css*/
         .box {
-            width: 250px;
-            height: 280px;
+            width: 300px;
+            height: 300px;
             margin-top: 50px;
             color: white;
             background-color: #393E46;
             border-style: solid;
             border-width: 2px;
-            border-color: rgb(255, 255, 0);
+            border-color:orange;
             border-radius: 20%;
             text-align: center;
             
@@ -255,7 +266,7 @@
 
         /*Skills section skills box hover effect css*/
         .box:hover {
-            color: rgb(255, 255, 0);
+            color:orange;
             border-color: white;
             border-width: 5px;
             transform: translateY(-10px);
@@ -265,35 +276,35 @@
 
         /*Project section css start*/
         .project-section {
-            width: 900px;
+            width: 1500px;
             height: auto;
             margin-top: 200px;
         }
 
         /*Project section card css*/
         .project-card {
-            width: 900px;
+            width: 1200px;
             height: auto;
-            margin-left: 50px;
+            margin-left: 200px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: 1fr 1fr 1fr;
             row-gap: 20px;
             column-gap: 20px;
         }
 
         /*Project section heading css*/
         .project-heading {
-            width: 900px;
+            width: 1500px;
             height: 150px;
-            color: rgb(255, 255, 0);
-            padding-left: 50px;
+            color:orange;
+            padding-left: 100px;
             padding-top: 150px;
             margin-bottom: 70px;
         }
 
         /*Project section project cards css*/
         .card {
-            width: 250px;
+            width: 300px;
             height: 300px;
             color: white;
             text-align: center;
@@ -302,14 +313,14 @@
             margin-bottom: 50px;
             border-style: solid;
             border-width: 2px;
-            border-color: rgb(255, 255, 0);
+            border-color:orange;
             margin-top: 80px;
             border-radius: 10px;
         }
 
         /*Project section project cards hover section css*/
         .card:hover {
-            color: rgb(255, 255, 0);
+            color:orange;
             border-color: white;
             border-width: 5px;
             transform: translateY(-10px);
@@ -320,7 +331,7 @@
 
         /*Contact section css start*/
         .contact-section {
-            width: 1100px;
+            width: 1500px;
             height: 700px;
             background-color: #222222;
             margin-top: 100px;
@@ -331,8 +342,8 @@
         .contact-heading {
             width: 100%;
             height: 20px;
-            margin-left: 50px;
-            color: rgb(255, 255, 0);
+            margin-left: 100px;
+            color:orange;
             text-transform: uppercase;
         }
 
@@ -340,7 +351,7 @@
         .contact-information {
             width: 900px;
             height: 100%;
-            margin-left: 50px;
+            margin-left: 200px;
             margin-top: 100px;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -355,7 +366,7 @@
             font-size: 16px;
             border-style: solid;
             border-width: 2px;
-            border-color: rgb(255, 255, 0);
+            border-color:orange;
             border-radius: 5px;
         }
 
@@ -367,7 +378,7 @@
             padding-left: 20px;
             border-style: solid;
             border-width: 2px;
-            border-color: rgb(255, 255, 0);
+            border-color:orange;
             border-radius: 5px;
         }
 
@@ -377,11 +388,12 @@
             height: 40px;
             border-width: 1px;
             border-radius: 5px;
+            
         }
 
         /*Contact section message form input placeholder css*/
         input::placeholder {
-            padding-left: 10px;
+            padding-left: 20px;
         }
 
         /*Contact section message form input textarea css*/
@@ -393,7 +405,7 @@
 
         /*Contact section message form input textarea padding css*/
         textarea::placeholder {
-            padding-left: 10px;
+            padding-left: 20px;
         }
 
         /*Contact section message form send message button css*/
@@ -401,7 +413,7 @@
             width: 150px;
             height: 35px;
             border-radius: 5px;
-            background-color: rgb(255, 255, 0);
+            background-color:orange;
             color: black;
             outline: none;
             border: none;
@@ -417,7 +429,7 @@
 
         /*Footer section css start*/
         .footer-section {
-            width: 1100px;
+            width: 1530px;
             height: 75px;
             text-align: center;
             margin-top: 65px;
@@ -479,12 +491,12 @@
             <!--Home section text-->
             <div class="home-text">
 
-                <h1>Hello! This is <b>Pratik Patil!</b></h1>
-                <h3>Passionate <span>Full Stack Developer</span> proficient
+                <h1 class="intro-text">Hello! This is <b>Pratik Patil!</b></h1>
+                <h3 class="profile-text">Passionate <span>Full Stack Developer</span> proficient
                     in <span>HTML, CSS, and JavaScript.</span>
                 </h3>
                 <br /><br />
-                <h4><span>Let’s connect</span> to build something amazing together !
+                <h4 class="connect-text"><span>Let’s connect</span> to build something amazing together !
                 </h4>
                 <br /><br>
 
@@ -765,24 +777,24 @@
                 <div class="contact-left">
                     <h4>CONTACT DETAILS :-</h4>
                     <br />
-                    <i class="fa fa-phone" style="font-size:25px ;color:  rgb(255, 255, 0);"></i>
+                    <i class="fa fa-phone" style="font-size:25px ;color: orange;"></i>
                     &nbsp;&nbsp;<a href="tel:+91 9284680763">+91 9284680763</a><br /><br /><br />
 
-                    <i class="fa fa-envelope" style="font-size:25px ;color:  rgb(255, 255, 0);"></i>
+                    <i class="fa fa-envelope" style="font-size:25px ;color: orange;"></i>
                     &nbsp;&nbsp;<a href="mailto:pripat2610@gmail.com">pripat2610@gmail.com
                     </a><br /><br /><br />
 
-                    <i class="fa fa-map-marker" style="font-size:25px ;color:  rgb(255, 255, 0);"></i>
+                    <i class="fa fa-map-marker" style="font-size:25px ;color: orange;"></i>
                     &nbsp;&nbsp;<a
                         href="https://www.google.com/maps/place/Nagpur,+Maharashtra/@21.1613263,78.9076932,43220m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bd4c0a5a31faf13:0x19b37d06d0bb3e2b!8m2!3d21.1458004!4d79.0881546!16zL20vMDJjOTht?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D">
                         Nagpur, Maharashtra, India
                     </a><br /><br /><br />
 
-                    <i class="fa fa-linkedin" style="font-size:25px ;color:  rgb(255, 255, 0);"></i>
+                    <i class="fa fa-linkedin" style="font-size:25px ;color: orange;"></i>
                     &nbsp;&nbsp;<a href="https://www.linkedin.com/in/pratik-patil-b5193754/">LinkedIn
                         Profile</a><br /><br /><br />
 
-                    <i class="fa fa-github" style="font-size:25px;color:  rgb(255, 255, 0);"></i>
+                    <i class="fa fa-github" style="font-size:25px;color: orange;"></i>
                     &nbsp;&nbsp;<a href="https://github.com/PratikPatilFSD">GitHub Profile</a>
 
                 </div>
