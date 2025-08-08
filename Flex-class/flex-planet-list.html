@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets List</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .galaxy {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dW5pdmVyc2V8ZW58MHx8MHx8fDA%3D);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .planet {
+            width: 40%;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: 600;
+            background-color: rgb(95, 143, 206);
+            color:white;
+            border-radius: 5px;
+            text-align: center;
+            border-style: solid;
+            border-width: 1px;
+            border-color: lightslategray;
+        }
+        .planet:hover{
+            background-color: rgb(2, 96, 128);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="galaxy">
+        <div class="planet">Sun</div>
+        <div class="planet">Mercury</div>
+        <div class="planet">Venus</div>
+        <div class="planet">Earth</div>
+        <div class="planet">Mars</div>
+        <div class="planet">Jupiter</div>
+        <div class="planet">Saturn</div>
+        <div class="planet">Uranus</div>
+        <div class="planet">Neptune</div>
+        <div class="planet">Pluto</div>
+    </div>
+</body>
+
+</html>
