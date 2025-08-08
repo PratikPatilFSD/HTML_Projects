@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex class three</title>
+    <style>
+        body {
+            width: 100vw;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .container-one {
+            width: 95%;
+            height: 400px;
+            background-color: antiquewhite;
+            background-image: url(https://images.unsplash.com/photo-1546587348-d12660c30c50?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyYWx8ZW58MHx8MHx8fDA%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .container-two {
+            width: 95%;
+            height: 700px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .content-one {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .content-one-one {
+            width: 100%;
+            height: 40%;
+            display: flex;
+            gap: 20px;
+        }
+
+        .box-one {
+            width: 50%;
+            height: 90%;
+            padding: 10px;
+            background-color: rgb(112, 129, 27);
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .box-two {
+            width: 50%;
+            height: 90%;
+            padding: 10px;
+            background-color: rgb(43, 83, 72);
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        .content-one-two {
+            width: 100%;
+            height: 60%;
+            background-color: rgb(22, 102, 206);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .content-two {
+            width: 30%;
+            height: 100%;
+            background-color: rgb(46, 9, 93);
+        }
+
+        /*upto 480 px screen(mobile phone)*/
+        @media (max-width: 480px) {
+            .container-one {
+                height: 600px;
+                background-image: url(https://images.unsplash.com/photo-1546587348-d12660c30c50?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5hdHVyYWx8ZW58MHx8MHx8fDA%3D);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            .container-two {
+                height: 900px;
+                flex-direction: column;
+            }
+
+            .content-one {
+                width: 100%;
+                height: 70%;
+            }
+
+            .box-one {
+
+                font-size: 10px;
+
+            }
+
+            .box-two {
+
+                font-size: 10px;
+
+            }
+
+            .content-two {
+                width: 100%;
+                height: 30%;
+            }
+        }
+
+        /*upto 1024 px screen(tablet)*/
+        @media(min-width:481px)and (max-width: 1024px) {
+
+            .container-two {
+                height: 900px;
+                flex-direction: column;
+            }
+
+            .content-one {
+                width: 100%;
+                height: 70%;
+            }
+
+            .box-one {
+
+                font-size: 13px;
+
+            }
+
+            .box-two {
+
+                font-size: 13px;
+
+            }
+
+            .content-two {
+                width: 100%;
+                height: 30%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container-one">
+
+        </div>
+
+        <div class="container-two">
+
+            <div class="content-one">
+
+                <div class="content-one-one">
+                    <div class="box-one">
+                        <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that
+                            are programmed to think and learn like humans. These systems can perform tasks that
+                            typically require human intelligence, such as learning, problem-solving, perception, and
+                            decision-making. AI encompasses a range of technologies that enable computers to perform
+                            these functions, including machine learning, deep learning, and natural language processing.
+                        </p>
+                    </div>
+                    <div class="box-two">
+                        <p>Artificial intelligence (AI) refers to the simulation of human intelligence in machines that
+                            are programmed to think and learn like humans. These systems can perform tasks that
+                            typically require human intelligence, such as learning, problem-solving, perception, and
+                            decision-making. AI encompasses a range of technologies that enable computers to perform
+                            these functions, including machine learning, deep learning, and natural language processing.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="content-one-two">
+                    <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
+                        alt="">
+                </div>
+            </div>
+            <div class="content-two"></div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>>
