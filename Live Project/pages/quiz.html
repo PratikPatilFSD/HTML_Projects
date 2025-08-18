@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MathVerse - Full Quiz</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="quiz.css" />
+  
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="logo-title">
+      <h1><span>Math</span>Verse</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="../index.html">HOME</a>
+      <a href="../index.html #about">ABOUT</a>
+      <a href="../pages/syllabus.html">SYLLABUS</a>
+      <a href="quiz.html">QUIZ</a>
+      <a href="../pages/contact.html">CONTACT</a>
+    </nav>
+  </header>
+
+  <h1 style="margin-left: 50px;color: #fff;;">Full Quiz (100 Questions)</h1>
+
+  <!-- Quiz form with 100 questions -->
+  <form id="quizForm">
+
+    <fieldset class="question active" id="q1">
+      <legend>1. What is 7 + 5?</legend>
+      <label><input type="radio" name="q1" value="13" onclick="checkAnswer(1, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q1" value="11" onclick="checkAnswer(1, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q1" value="14" onclick="checkAnswer(1, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q1" value="12" onclick="checkAnswer(1, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <div class="feedback" id="feedback1"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+
+        <button type="button" onclick="nextQuestion(1)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q2">
+      <legend>2. What is 15 - 6?</legend>
+      <label><input type="radio" name="q2" value="8" onclick="checkAnswer(2, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q2" value="11" onclick="checkAnswer(2, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q2" value="10" onclick="checkAnswer(2, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q2" value="9" onclick="checkAnswer(2, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <div class="feedback" id="feedback2"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(2)">Previous</button>
+        <button type="button" onclick="nextQuestion(2)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q3">
+      <legend>3. What is 9 × 6?</legend>
+      <label><input type="radio" name="q3" value="56" onclick="checkAnswer(3, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <label><input type="radio" name="q3" value="54" onclick="checkAnswer(3, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <label><input type="radio" name="q3" value="55" onclick="checkAnswer(3, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <label><input type="radio" name="q3" value="53" onclick="checkAnswer(3, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <div class="feedback" id="feedback3"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(3)">Previous</button>
+        <button type="button" onclick="nextQuestion(3)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q4">
+      <legend>4. What is 36 ÷ 6?</legend>
+      <label><input type="radio" name="q4" value="8" onclick="checkAnswer(4, this.value, '6', `36 ÷ 6 = 6.`)">
+        8</label><br>
+      <label><input type="radio" name="q4" value="7" onclick="checkAnswer(4, this.value, '6', `36 ÷ 6 = 6.`)">
+        7</label><br>
+      <label><input type="radio" name="q4" value="6" onclick="checkAnswer(4, this.value, '6', `36 ÷ 6 = 6.`)">
+        6</label><br>
+      <label><input type="radio" name="q4" value="5" onclick="checkAnswer(4, this.value, '6', `36 ÷ 6 = 6.`)">
+        5</label><br>
+      <div class="feedback" id="feedback4"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(4)">Previous</button>
+        <button type="button" onclick="nextQuestion(4)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q5">
+      <legend>5. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q5" value="3"
+          onclick="checkAnswer(5, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <label><input type="radio" name="q5" value="2"
+          onclick="checkAnswer(5, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <label><input type="radio" name="q5" value="4"
+          onclick="checkAnswer(5, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <label><input type="radio" name="q5" value="1"
+          onclick="checkAnswer(5, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <div class="feedback" id="feedback5"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(5)">Previous</button>
+        <button type="button" onclick="nextQuestion(5)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q6">
+      <legend>6. What is the value of π rounded to 2 decimal places?</legend>
+      <label><input type="radio" name="q6" value="3.16"
+          onclick="checkAnswer(6, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.16</label><br>
+      <label><input type="radio" name="q6" value="3.12"
+          onclick="checkAnswer(6, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.12</label><br>
+      <label><input type="radio" name="q6" value="3.18"
+          onclick="checkAnswer(6, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.18</label><br>
+      <label><input type="radio" name="q6" value="3.14"
+          onclick="checkAnswer(6, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.14</label><br>
+      <div class="feedback" id="feedback6"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(6)">Previous</button>
+        <button type="button" onclick="nextQuestion(6)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q7">
+      <legend>7. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q7" value="14"
+          onclick="checkAnswer(7, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q7" value="12"
+          onclick="checkAnswer(7, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <label><input type="radio" name="q7" value="16"
+          onclick="checkAnswer(7, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q7" value="10"
+          onclick="checkAnswer(7, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <div class="feedback" id="feedback7"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(7)">Previous</button>
+        <button type="button" onclick="nextQuestion(7)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q8">
+      <legend>8. What is the square of 7?</legend>
+      <label><input type="radio" name="q8" value="50" onclick="checkAnswer(8, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <label><input type="radio" name="q8" value="48" onclick="checkAnswer(8, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q8" value="49" onclick="checkAnswer(8, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <label><input type="radio" name="q8" value="51" onclick="checkAnswer(8, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <div class="feedback" id="feedback8"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(8)">Previous</button>
+        <button type="button" onclick="nextQuestion(8)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q9">
+      <legend>9. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q9" value="24"
+          onclick="checkAnswer(9, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <label><input type="radio" name="q9" value="20"
+          onclick="checkAnswer(9, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q9" value="22"
+          onclick="checkAnswer(9, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q9" value="18"
+          onclick="checkAnswer(9, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <div class="feedback" id="feedback9"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(9)">Previous</button>
+        <button type="button" onclick="nextQuestion(9)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q10">
+      <legend>10. What is the square root of 144?</legend>
+      <label><input type="radio" name="q10" value="13"
+          onclick="checkAnswer(10, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q10" value="11"
+          onclick="checkAnswer(10, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <label><input type="radio" name="q10" value="10"
+          onclick="checkAnswer(10, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q10" value="12"
+          onclick="checkAnswer(10, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <div class="feedback" id="feedback10"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(10)">Previous</button>
+        <button type="button" onclick="nextQuestion(10)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q11">
+      <legend>11. What is 7 + 5?</legend>
+      <label><input type="radio" name="q11" value="12" onclick="checkAnswer(11, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q11" value="14" onclick="checkAnswer(11, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q11" value="13" onclick="checkAnswer(11, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q11" value="11" onclick="checkAnswer(11, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback11"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(11)">Previous</button>
+        <button type="button" onclick="nextQuestion(11)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q12">
+      <legend>12. What is the value of π rounded to 2 decimal places?</legend>
+      <label><input type="radio" name="q12" value="3.16"
+          onclick="checkAnswer(12, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.16</label><br>
+      <label><input type="radio" name="q12" value="3.14"
+          onclick="checkAnswer(12, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.14</label><br>
+      <label><input type="radio" name="q12" value="3.12"
+          onclick="checkAnswer(12, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.12</label><br>
+      <label><input type="radio" name="q12" value="3.18"
+          onclick="checkAnswer(12, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.18</label><br>
+      <div class="feedback" id="feedback12"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(12)">Previous</button>
+        <button type="button" onclick="nextQuestion(12)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q13">
+      <legend>13. What is 7 + 5?</legend>
+      <label><input type="radio" name="q13" value="14" onclick="checkAnswer(13, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q13" value="12" onclick="checkAnswer(13, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q13" value="13" onclick="checkAnswer(13, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q13" value="11" onclick="checkAnswer(13, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback13"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(13)">Previous</button>
+        <button type="button" onclick="nextQuestion(13)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q14">
+      <legend>14. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q14" value="10"
+          onclick="checkAnswer(14, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q14" value="16"
+          onclick="checkAnswer(14, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q14" value="14"
+          onclick="checkAnswer(14, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q14" value="12"
+          onclick="checkAnswer(14, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <div class="feedback" id="feedback14"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(14)">Previous</button>
+        <button type="button" onclick="nextQuestion(14)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q15">
+      <legend>15. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q15" value="3"
+          onclick="checkAnswer(15, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <label><input type="radio" name="q15" value="1"
+          onclick="checkAnswer(15, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <label><input type="radio" name="q15" value="2"
+          onclick="checkAnswer(15, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <label><input type="radio" name="q15" value="4"
+          onclick="checkAnswer(15, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <div class="feedback" id="feedback15"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(15)">Previous</button>
+        <button type="button" onclick="nextQuestion(15)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q16">
+      <legend>16. What is the square of 7?</legend>
+      <label><input type="radio" name="q16" value="48" onclick="checkAnswer(16, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q16" value="51" onclick="checkAnswer(16, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <label><input type="radio" name="q16" value="49" onclick="checkAnswer(16, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <label><input type="radio" name="q16" value="50" onclick="checkAnswer(16, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <div class="feedback" id="feedback16"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(16)">Previous</button>
+        <button type="button" onclick="nextQuestion(16)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q17">
+      <legend>17. What is 7 + 5?</legend>
+      <label><input type="radio" name="q17" value="13" onclick="checkAnswer(17, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q17" value="12" onclick="checkAnswer(17, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q17" value="14" onclick="checkAnswer(17, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q17" value="11" onclick="checkAnswer(17, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback17"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(17)">Previous</button>
+        <button type="button" onclick="nextQuestion(17)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q18">
+      <legend>18. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q18" value="18"
+          onclick="checkAnswer(18, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q18" value="22"
+          onclick="checkAnswer(18, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q18" value="20"
+          onclick="checkAnswer(18, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q18" value="24"
+          onclick="checkAnswer(18, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <div class="feedback" id="feedback18"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(18)">Previous</button>
+        <button type="button" onclick="nextQuestion(18)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q19">
+      <legend>19. What is 7 + 5?</legend>
+      <label><input type="radio" name="q19" value="14" onclick="checkAnswer(19, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q19" value="12" onclick="checkAnswer(19, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q19" value="11" onclick="checkAnswer(19, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q19" value="13" onclick="checkAnswer(19, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <div class="feedback" id="feedback19"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(19)">Previous</button>
+        <button type="button" onclick="nextQuestion(19)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q20">
+      <legend>20. What is the square root of 144?</legend>
+      <label><input type="radio" name="q20" value="13"
+          onclick="checkAnswer(20, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q20" value="12"
+          onclick="checkAnswer(20, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <label><input type="radio" name="q20" value="10"
+          onclick="checkAnswer(20, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q20" value="11"
+          onclick="checkAnswer(20, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <div class="feedback" id="feedback20"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(20)">Previous</button>
+        <button type="button" onclick="nextQuestion(20)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q21">
+      <legend>21. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q21" value="16"
+          onclick="checkAnswer(21, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q21" value="12"
+          onclick="checkAnswer(21, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <label><input type="radio" name="q21" value="14"
+          onclick="checkAnswer(21, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q21" value="10"
+          onclick="checkAnswer(21, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <div class="feedback" id="feedback21"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(21)">Previous</button>
+        <button type="button" onclick="nextQuestion(21)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q22">
+      <legend>22. What is 15 - 6?</legend>
+      <label><input type="radio" name="q22" value="9" onclick="checkAnswer(22, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <label><input type="radio" name="q22" value="11" onclick="checkAnswer(22, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q22" value="8" onclick="checkAnswer(22, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q22" value="10" onclick="checkAnswer(22, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <div class="feedback" id="feedback22"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(22)">Previous</button>
+        <button type="button" onclick="nextQuestion(22)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q23">
+      <legend>23. What is 7 + 5?</legend>
+      <label><input type="radio" name="q23" value="12" onclick="checkAnswer(23, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q23" value="14" onclick="checkAnswer(23, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q23" value="13" onclick="checkAnswer(23, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q23" value="11" onclick="checkAnswer(23, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback23"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(23)">Previous</button>
+        <button type="button" onclick="nextQuestion(23)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q24">
+      <legend>24. What is the square of 7?</legend>
+      <label><input type="radio" name="q24" value="48" onclick="checkAnswer(24, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q24" value="50" onclick="checkAnswer(24, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <label><input type="radio" name="q24" value="49" onclick="checkAnswer(24, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <label><input type="radio" name="q24" value="51" onclick="checkAnswer(24, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <div class="feedback" id="feedback24"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(24)">Previous</button>
+        <button type="button" onclick="nextQuestion(24)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q25">
+      <legend>25. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q25" value="3"
+          onclick="checkAnswer(25, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <label><input type="radio" name="q25" value="4"
+          onclick="checkAnswer(25, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <label><input type="radio" name="q25" value="1"
+          onclick="checkAnswer(25, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <label><input type="radio" name="q25" value="2"
+          onclick="checkAnswer(25, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <div class="feedback" id="feedback25"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(25)">Previous</button>
+        <button type="button" onclick="nextQuestion(25)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q26">
+      <legend>26. What is 15 - 6?</legend>
+      <label><input type="radio" name="q26" value="11" onclick="checkAnswer(26, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q26" value="10" onclick="checkAnswer(26, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q26" value="8" onclick="checkAnswer(26, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q26" value="9" onclick="checkAnswer(26, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <div class="feedback" id="feedback26"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(26)">Previous</button>
+        <button type="button" onclick="nextQuestion(26)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q27">
+      <legend>27. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q27" value="18"
+          onclick="checkAnswer(27, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q27" value="22"
+          onclick="checkAnswer(27, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q27" value="24"
+          onclick="checkAnswer(27, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <label><input type="radio" name="q27" value="20"
+          onclick="checkAnswer(27, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <div class="feedback" id="feedback27"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(27)">Previous</button>
+        <button type="button" onclick="nextQuestion(27)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q28">
+      <legend>28. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q28" value="14"
+          onclick="checkAnswer(28, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q28" value="12"
+          onclick="checkAnswer(28, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <label><input type="radio" name="q28" value="16"
+          onclick="checkAnswer(28, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q28" value="10"
+          onclick="checkAnswer(28, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <div class="feedback" id="feedback28"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(28)">Previous</button>
+        <button type="button" onclick="nextQuestion(28)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q29">
+      <legend>29. What is 7 + 5?</legend>
+      <label><input type="radio" name="q29" value="11" onclick="checkAnswer(29, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q29" value="14" onclick="checkAnswer(29, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q29" value="12" onclick="checkAnswer(29, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q29" value="13" onclick="checkAnswer(29, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <div class="feedback" id="feedback29"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(29)">Previous</button>
+        <button type="button" onclick="nextQuestion(29)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q30">
+      <legend>30. What is the square root of 144?</legend>
+      <label><input type="radio" name="q30" value="13"
+          onclick="checkAnswer(30, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q30" value="10"
+          onclick="checkAnswer(30, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q30" value="12"
+          onclick="checkAnswer(30, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <label><input type="radio" name="q30" value="11"
+          onclick="checkAnswer(30, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <div class="feedback" id="feedback30"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(30)">Previous</button>
+        <button type="button" onclick="nextQuestion(30)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q31">
+      <legend>31. What is 7 + 5?</legend>
+      <label><input type="radio" name="q31" value="12" onclick="checkAnswer(31, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q31" value="13" onclick="checkAnswer(31, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q31" value="14" onclick="checkAnswer(31, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q31" value="11" onclick="checkAnswer(31, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback31"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(31)">Previous</button>
+        <button type="button" onclick="nextQuestion(31)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q32">
+      <legend>32. What is the square of 7?</legend>
+      <label><input type="radio" name="q32" value="51" onclick="checkAnswer(32, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <label><input type="radio" name="q32" value="48" onclick="checkAnswer(32, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q32" value="50" onclick="checkAnswer(32, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <label><input type="radio" name="q32" value="49" onclick="checkAnswer(32, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <div class="feedback" id="feedback32"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(32)">Previous</button>
+        <button type="button" onclick="nextQuestion(32)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q33">
+      <legend>33. What is 9 × 6?</legend>
+      <label><input type="radio" name="q33" value="54" onclick="checkAnswer(33, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <label><input type="radio" name="q33" value="55" onclick="checkAnswer(33, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <label><input type="radio" name="q33" value="56" onclick="checkAnswer(33, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <label><input type="radio" name="q33" value="53" onclick="checkAnswer(33, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <div class="feedback" id="feedback33"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(33)">Previous</button>
+        <button type="button" onclick="nextQuestion(33)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q34">
+      <legend>34. What is 15 - 6?</legend>
+      <label><input type="radio" name="q34" value="10" onclick="checkAnswer(34, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q34" value="8" onclick="checkAnswer(34, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q34" value="11" onclick="checkAnswer(34, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q34" value="9" onclick="checkAnswer(34, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <div class="feedback" id="feedback34"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(34)">Previous</button>
+        <button type="button" onclick="nextQuestion(34)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q35">
+      <legend>35. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q35" value="10"
+          onclick="checkAnswer(35, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q35" value="12"
+          onclick="checkAnswer(35, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <label><input type="radio" name="q35" value="16"
+          onclick="checkAnswer(35, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q35" value="14"
+          onclick="checkAnswer(35, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <div class="feedback" id="feedback35"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(35)">Previous</button>
+        <button type="button" onclick="nextQuestion(35)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q36">
+      <legend>36. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q36" value="18"
+          onclick="checkAnswer(36, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q36" value="22"
+          onclick="checkAnswer(36, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q36" value="20"
+          onclick="checkAnswer(36, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q36" value="24"
+          onclick="checkAnswer(36, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <div class="feedback" id="feedback36"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(36)">Previous</button>
+        <button type="button" onclick="nextQuestion(36)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q37">
+      <legend>37. What is 7 + 5?</legend>
+      <label><input type="radio" name="q37" value="12" onclick="checkAnswer(37, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q37" value="14" onclick="checkAnswer(37, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q37" value="13" onclick="checkAnswer(37, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q37" value="11" onclick="checkAnswer(37, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback37"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(37)">Previous</button>
+        <button type="button" onclick="nextQuestion(37)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q38">
+      <legend>38. What is 15 - 6?</legend>
+      <label><input type="radio" name="q38" value="10" onclick="checkAnswer(38, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q38" value="8" onclick="checkAnswer(38, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q38" value="9" onclick="checkAnswer(38, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <label><input type="radio" name="q38" value="11" onclick="checkAnswer(38, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <div class="feedback" id="feedback38"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(38)">Previous</button>
+        <button type="button" onclick="nextQuestion(38)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q39">
+      <legend>39. What is 9 × 6?</legend>
+      <label><input type="radio" name="q39" value="54" onclick="checkAnswer(39, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <label><input type="radio" name="q39" value="53" onclick="checkAnswer(39, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <label><input type="radio" name="q39" value="55" onclick="checkAnswer(39, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <label><input type="radio" name="q39" value="56" onclick="checkAnswer(39, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <div class="feedback" id="feedback39"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(39)">Previous</button>
+        <button type="button" onclick="nextQuestion(39)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q40">
+      <legend>40. What is the square root of 144?</legend>
+      <label><input type="radio" name="q40" value="10"
+          onclick="checkAnswer(40, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q40" value="11"
+          onclick="checkAnswer(40, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <label><input type="radio" name="q40" value="13"
+          onclick="checkAnswer(40, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q40" value="12"
+          onclick="checkAnswer(40, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <div class="feedback" id="feedback40"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(40)">Previous</button>
+        <button type="button" onclick="nextQuestion(40)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q41">
+      <legend>41. What is 7 + 5?</legend>
+      <label><input type="radio" name="q41" value="11" onclick="checkAnswer(41, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q41" value="13" onclick="checkAnswer(41, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q41" value="14" onclick="checkAnswer(41, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q41" value="12" onclick="checkAnswer(41, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <div class="feedback" id="feedback41"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(41)">Previous</button>
+        <button type="button" onclick="nextQuestion(41)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q42">
+      <legend>42. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q42" value="14"
+          onclick="checkAnswer(42, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q42" value="10"
+          onclick="checkAnswer(42, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q42" value="16"
+          onclick="checkAnswer(42, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q42" value="12"
+          onclick="checkAnswer(42, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <div class="feedback" id="feedback42"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(42)">Previous</button>
+        <button type="button" onclick="nextQuestion(42)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q43">
+      <legend>43. What is 7 + 5?</legend>
+      <label><input type="radio" name="q43" value="14" onclick="checkAnswer(43, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q43" value="11" onclick="checkAnswer(43, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q43" value="13" onclick="checkAnswer(43, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q43" value="12" onclick="checkAnswer(43, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <div class="feedback" id="feedback43"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(43)">Previous</button>
+        <button type="button" onclick="nextQuestion(43)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q44">
+      <legend>44. What is 36 ÷ 6?</legend>
+      <label><input type="radio" name="q44" value="7" onclick="checkAnswer(44, this.value, '6', `36 ÷ 6 = 6.`)">
+        7</label><br>
+      <label><input type="radio" name="q44" value="8" onclick="checkAnswer(44, this.value, '6', `36 ÷ 6 = 6.`)">
+        8</label><br>
+      <label><input type="radio" name="q44" value="5" onclick="checkAnswer(44, this.value, '6', `36 ÷ 6 = 6.`)">
+        5</label><br>
+      <label><input type="radio" name="q44" value="6" onclick="checkAnswer(44, this.value, '6', `36 ÷ 6 = 6.`)">
+        6</label><br>
+      <div class="feedback" id="feedback44"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(44)">Previous</button>
+        <button type="button" onclick="nextQuestion(44)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q45">
+      <legend>45. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q45" value="20"
+          onclick="checkAnswer(45, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q45" value="18"
+          onclick="checkAnswer(45, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q45" value="22"
+          onclick="checkAnswer(45, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q45" value="24"
+          onclick="checkAnswer(45, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <div class="feedback" id="feedback45"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(45)">Previous</button>
+        <button type="button" onclick="nextQuestion(45)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q46">
+      <legend>46. What is 15 - 6?</legend>
+      <label><input type="radio" name="q46" value="10" onclick="checkAnswer(46, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q46" value="11" onclick="checkAnswer(46, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q46" value="9" onclick="checkAnswer(46, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <label><input type="radio" name="q46" value="8" onclick="checkAnswer(46, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <div class="feedback" id="feedback46"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(46)">Previous</button>
+        <button type="button" onclick="nextQuestion(46)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q47">
+      <legend>47. What is 7 + 5?</legend>
+      <label><input type="radio" name="q47" value="12" onclick="checkAnswer(47, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q47" value="14" onclick="checkAnswer(47, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q47" value="13" onclick="checkAnswer(47, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q47" value="11" onclick="checkAnswer(47, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback47"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(47)">Previous</button>
+        <button type="button" onclick="nextQuestion(47)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q48">
+      <legend>48. What is the square of 7?</legend>
+      <label><input type="radio" name="q48" value="48" onclick="checkAnswer(48, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q48" value="49" onclick="checkAnswer(48, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <label><input type="radio" name="q48" value="51" onclick="checkAnswer(48, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <label><input type="radio" name="q48" value="50" onclick="checkAnswer(48, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <div class="feedback" id="feedback48"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(48)">Previous</button>
+        <button type="button" onclick="nextQuestion(48)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q49">
+      <legend>49. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q49" value="10"
+          onclick="checkAnswer(49, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q49" value="12"
+          onclick="checkAnswer(49, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <label><input type="radio" name="q49" value="16"
+          onclick="checkAnswer(49, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q49" value="14"
+          onclick="checkAnswer(49, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <div class="feedback" id="feedback49"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(49)">Previous</button>
+        <button type="button" onclick="nextQuestion(49)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q50">
+      <legend>50. What is the square root of 144?</legend>
+      <label><input type="radio" name="q50" value="10"
+          onclick="checkAnswer(50, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q50" value="11"
+          onclick="checkAnswer(50, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <label><input type="radio" name="q50" value="12"
+          onclick="checkAnswer(50, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <label><input type="radio" name="q50" value="13"
+          onclick="checkAnswer(50, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <div class="feedback" id="feedback50"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(50)">Previous</button>
+        <button type="button" onclick="nextQuestion(50)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q51">
+      <legend>51. What is 9 × 6?</legend>
+      <label><input type="radio" name="q51" value="54" onclick="checkAnswer(51, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <label><input type="radio" name="q51" value="56" onclick="checkAnswer(51, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <label><input type="radio" name="q51" value="55" onclick="checkAnswer(51, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <label><input type="radio" name="q51" value="53" onclick="checkAnswer(51, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <div class="feedback" id="feedback51"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(51)">Previous</button>
+        <button type="button" onclick="nextQuestion(51)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q52">
+      <legend>52. What is 36 ÷ 6?</legend>
+      <label><input type="radio" name="q52" value="6" onclick="checkAnswer(52, this.value, '6', `36 ÷ 6 = 6.`)">
+        6</label><br>
+      <label><input type="radio" name="q52" value="8" onclick="checkAnswer(52, this.value, '6', `36 ÷ 6 = 6.`)">
+        8</label><br>
+      <label><input type="radio" name="q52" value="7" onclick="checkAnswer(52, this.value, '6', `36 ÷ 6 = 6.`)">
+        7</label><br>
+      <label><input type="radio" name="q52" value="5" onclick="checkAnswer(52, this.value, '6', `36 ÷ 6 = 6.`)">
+        5</label><br>
+      <div class="feedback" id="feedback52"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(52)">Previous</button>
+        <button type="button" onclick="nextQuestion(52)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q53">
+      <legend>53. What is 7 + 5?</legend>
+      <label><input type="radio" name="q53" value="11" onclick="checkAnswer(53, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q53" value="13" onclick="checkAnswer(53, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q53" value="12" onclick="checkAnswer(53, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q53" value="14" onclick="checkAnswer(53, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <div class="feedback" id="feedback53"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(53)">Previous</button>
+        <button type="button" onclick="nextQuestion(53)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q54">
+      <legend>54. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q54" value="20"
+          onclick="checkAnswer(54, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q54" value="22"
+          onclick="checkAnswer(54, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q54" value="24"
+          onclick="checkAnswer(54, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <label><input type="radio" name="q54" value="18"
+          onclick="checkAnswer(54, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <div class="feedback" id="feedback54"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(54)">Previous</button>
+        <button type="button" onclick="nextQuestion(54)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q55">
+      <legend>55. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q55" value="4"
+          onclick="checkAnswer(55, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <label><input type="radio" name="q55" value="3"
+          onclick="checkAnswer(55, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <label><input type="radio" name="q55" value="2"
+          onclick="checkAnswer(55, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <label><input type="radio" name="q55" value="1"
+          onclick="checkAnswer(55, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <div class="feedback" id="feedback55"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(55)">Previous</button>
+        <button type="button" onclick="nextQuestion(55)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q56">
+      <legend>56. What is the square of 7?</legend>
+      <label><input type="radio" name="q56" value="51" onclick="checkAnswer(56, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <label><input type="radio" name="q56" value="48" onclick="checkAnswer(56, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q56" value="49" onclick="checkAnswer(56, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <label><input type="radio" name="q56" value="50" onclick="checkAnswer(56, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <div class="feedback" id="feedback56"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(56)">Previous</button>
+        <button type="button" onclick="nextQuestion(56)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q57">
+      <legend>57. What is 9 × 6?</legend>
+      <label><input type="radio" name="q57" value="56" onclick="checkAnswer(57, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <label><input type="radio" name="q57" value="54" onclick="checkAnswer(57, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <label><input type="radio" name="q57" value="53" onclick="checkAnswer(57, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <label><input type="radio" name="q57" value="55" onclick="checkAnswer(57, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <div class="feedback" id="feedback57"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(57)">Previous</button>
+        <button type="button" onclick="nextQuestion(57)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q58">
+      <legend>58. What is 15 - 6?</legend>
+      <label><input type="radio" name="q58" value="8" onclick="checkAnswer(58, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q58" value="10" onclick="checkAnswer(58, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q58" value="11" onclick="checkAnswer(58, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q58" value="9" onclick="checkAnswer(58, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <div class="feedback" id="feedback58"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(58)">Previous</button>
+        <button type="button" onclick="nextQuestion(58)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q59">
+      <legend>59. What is 7 + 5?</legend>
+      <label><input type="radio" name="q59" value="11" onclick="checkAnswer(59, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q59" value="13" onclick="checkAnswer(59, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q59" value="14" onclick="checkAnswer(59, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q59" value="12" onclick="checkAnswer(59, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <div class="feedback" id="feedback59"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(59)">Previous</button>
+        <button type="button" onclick="nextQuestion(59)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q60">
+      <legend>60. What is the square root of 144?</legend>
+      <label><input type="radio" name="q60" value="11"
+          onclick="checkAnswer(60, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <label><input type="radio" name="q60" value="13"
+          onclick="checkAnswer(60, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q60" value="12"
+          onclick="checkAnswer(60, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <label><input type="radio" name="q60" value="10"
+          onclick="checkAnswer(60, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <div class="feedback" id="feedback60"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(60)">Previous</button>
+        <button type="button" onclick="nextQuestion(60)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q61">
+      <legend>61. What is 7 + 5?</legend>
+      <label><input type="radio" name="q61" value="14" onclick="checkAnswer(61, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q61" value="12" onclick="checkAnswer(61, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q61" value="11" onclick="checkAnswer(61, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q61" value="13" onclick="checkAnswer(61, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <div class="feedback" id="feedback61"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(61)">Previous</button>
+        <button type="button" onclick="nextQuestion(61)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q62">
+      <legend>62. What is 15 - 6?</legend>
+      <label><input type="radio" name="q62" value="11" onclick="checkAnswer(62, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q62" value="10" onclick="checkAnswer(62, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q62" value="9" onclick="checkAnswer(62, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <label><input type="radio" name="q62" value="8" onclick="checkAnswer(62, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <div class="feedback" id="feedback62"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(62)">Previous</button>
+        <button type="button" onclick="nextQuestion(62)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q63">
+      <legend>63. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q63" value="18"
+          onclick="checkAnswer(63, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q63" value="20"
+          onclick="checkAnswer(63, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q63" value="24"
+          onclick="checkAnswer(63, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <label><input type="radio" name="q63" value="22"
+          onclick="checkAnswer(63, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <div class="feedback" id="feedback63"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(63)">Previous</button>
+        <button type="button" onclick="nextQuestion(63)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q64">
+      <legend>64. What is the square of 7?</legend>
+      <label><input type="radio" name="q64" value="49" onclick="checkAnswer(64, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <label><input type="radio" name="q64" value="51" onclick="checkAnswer(64, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <label><input type="radio" name="q64" value="48" onclick="checkAnswer(64, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q64" value="50" onclick="checkAnswer(64, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <div class="feedback" id="feedback64"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(64)">Previous</button>
+        <button type="button" onclick="nextQuestion(64)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q65">
+      <legend>65. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q65" value="2"
+          onclick="checkAnswer(65, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <label><input type="radio" name="q65" value="4"
+          onclick="checkAnswer(65, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <label><input type="radio" name="q65" value="1"
+          onclick="checkAnswer(65, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <label><input type="radio" name="q65" value="3"
+          onclick="checkAnswer(65, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <div class="feedback" id="feedback65"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(65)">Previous</button>
+        <button type="button" onclick="nextQuestion(65)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q66">
+      <legend>66. What is the value of π rounded to 2 decimal places?</legend>
+      <label><input type="radio" name="q66" value="3.18"
+          onclick="checkAnswer(66, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.18</label><br>
+      <label><input type="radio" name="q66" value="3.12"
+          onclick="checkAnswer(66, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.12</label><br>
+      <label><input type="radio" name="q66" value="3.14"
+          onclick="checkAnswer(66, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.14</label><br>
+      <label><input type="radio" name="q66" value="3.16"
+          onclick="checkAnswer(66, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.16</label><br>
+      <div class="feedback" id="feedback66"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(66)">Previous</button>
+        <button type="button" onclick="nextQuestion(66)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q67">
+      <legend>67. What is 7 + 5?</legend>
+      <label><input type="radio" name="q67" value="13" onclick="checkAnswer(67, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q67" value="14" onclick="checkAnswer(67, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q67" value="12" onclick="checkAnswer(67, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q67" value="11" onclick="checkAnswer(67, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <div class="feedback" id="feedback67"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(67)">Previous</button>
+        <button type="button" onclick="nextQuestion(67)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q68">
+      <legend>68. What is 36 ÷ 6?</legend>
+      <label><input type="radio" name="q68" value="6" onclick="checkAnswer(68, this.value, '6', `36 ÷ 6 = 6.`)">
+        6</label><br>
+      <label><input type="radio" name="q68" value="5" onclick="checkAnswer(68, this.value, '6', `36 ÷ 6 = 6.`)">
+        5</label><br>
+      <label><input type="radio" name="q68" value="8" onclick="checkAnswer(68, this.value, '6', `36 ÷ 6 = 6.`)">
+        8</label><br>
+      <label><input type="radio" name="q68" value="7" onclick="checkAnswer(68, this.value, '6', `36 ÷ 6 = 6.`)">
+        7</label><br>
+      <div class="feedback" id="feedback68"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(68)">Previous</button>
+        <button type="button" onclick="nextQuestion(68)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q69">
+      <legend>69. What is 9 × 6?</legend>
+      <label><input type="radio" name="q69" value="55" onclick="checkAnswer(69, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <label><input type="radio" name="q69" value="54" onclick="checkAnswer(69, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <label><input type="radio" name="q69" value="56" onclick="checkAnswer(69, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <label><input type="radio" name="q69" value="53" onclick="checkAnswer(69, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <div class="feedback" id="feedback69"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(69)">Previous</button>
+        <button type="button" onclick="nextQuestion(69)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q70">
+      <legend>70. What is the square root of 144?</legend>
+      <label><input type="radio" name="q70" value="10"
+          onclick="checkAnswer(70, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q70" value="13"
+          onclick="checkAnswer(70, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q70" value="12"
+          onclick="checkAnswer(70, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <label><input type="radio" name="q70" value="11"
+          onclick="checkAnswer(70, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <div class="feedback" id="feedback70"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(70)">Previous</button>
+        <button type="button" onclick="nextQuestion(70)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q71">
+      <legend>71. What is 7 + 5?</legend>
+      <label><input type="radio" name="q71" value="11" onclick="checkAnswer(71, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q71" value="14" onclick="checkAnswer(71, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q71" value="13" onclick="checkAnswer(71, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q71" value="12" onclick="checkAnswer(71, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <div class="feedback" id="feedback71"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(71)">Previous</button>
+        <button type="button" onclick="nextQuestion(71)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q72">
+      <legend>72. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q72" value="20"
+          onclick="checkAnswer(72, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q72" value="22"
+          onclick="checkAnswer(72, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q72" value="18"
+          onclick="checkAnswer(72, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q72" value="24"
+          onclick="checkAnswer(72, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <div class="feedback" id="feedback72"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(72)">Previous</button>
+        <button type="button" onclick="nextQuestion(72)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q73">
+      <legend>73. What is 7 + 5?</legend>
+      <label><input type="radio" name="q73" value="14" onclick="checkAnswer(73, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q73" value="11" onclick="checkAnswer(73, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q73" value="12" onclick="checkAnswer(73, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q73" value="13" onclick="checkAnswer(73, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <div class="feedback" id="feedback73"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(73)">Previous</button>
+        <button type="button" onclick="nextQuestion(73)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q74">
+      <legend>74. What is 15 - 6?</legend>
+      <label><input type="radio" name="q74" value="10" onclick="checkAnswer(74, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q74" value="11" onclick="checkAnswer(74, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q74" value="8" onclick="checkAnswer(74, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q74" value="9" onclick="checkAnswer(74, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <div class="feedback" id="feedback74"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(74)">Previous</button>
+        <button type="button" onclick="nextQuestion(74)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q75">
+      <legend>75. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q75" value="2"
+          onclick="checkAnswer(75, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <label><input type="radio" name="q75" value="3"
+          onclick="checkAnswer(75, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <label><input type="radio" name="q75" value="4"
+          onclick="checkAnswer(75, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <label><input type="radio" name="q75" value="1"
+          onclick="checkAnswer(75, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <div class="feedback" id="feedback75"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(75)">Previous</button>
+        <button type="button" onclick="nextQuestion(75)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q76">
+      <legend>76. What is 36 ÷ 6?</legend>
+      <label><input type="radio" name="q76" value="8" onclick="checkAnswer(76, this.value, '6', `36 ÷ 6 = 6.`)">
+        8</label><br>
+      <label><input type="radio" name="q76" value="6" onclick="checkAnswer(76, this.value, '6', `36 ÷ 6 = 6.`)">
+        6</label><br>
+      <label><input type="radio" name="q76" value="5" onclick="checkAnswer(76, this.value, '6', `36 ÷ 6 = 6.`)">
+        5</label><br>
+      <label><input type="radio" name="q76" value="7" onclick="checkAnswer(76, this.value, '6', `36 ÷ 6 = 6.`)">
+        7</label><br>
+      <div class="feedback" id="feedback76"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(76)">Previous</button>
+        <button type="button" onclick="nextQuestion(76)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q77">
+      <legend>77. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q77" value="10"
+          onclick="checkAnswer(77, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q77" value="16"
+          onclick="checkAnswer(77, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q77" value="14"
+          onclick="checkAnswer(77, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q77" value="12"
+          onclick="checkAnswer(77, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <div class="feedback" id="feedback77"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(77)">Previous</button>
+        <button type="button" onclick="nextQuestion(77)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q78">
+      <legend>78. What is the value of π rounded to 2 decimal places?</legend>
+      <label><input type="radio" name="q78" value="3.16"
+          onclick="checkAnswer(78, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.16</label><br>
+      <label><input type="radio" name="q78" value="3.14"
+          onclick="checkAnswer(78, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.14</label><br>
+      <label><input type="radio" name="q78" value="3.12"
+          onclick="checkAnswer(78, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.12</label><br>
+      <label><input type="radio" name="q78" value="3.18"
+          onclick="checkAnswer(78, this.value, '3.14', `π is approximately 3.14159, so rounded to 2 decimal places is 3.14.`)">
+        3.18</label><br>
+      <div class="feedback" id="feedback78"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(78)">Previous</button>
+        <button type="button" onclick="nextQuestion(78)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q79">
+      <legend>79. What is 7 + 5?</legend>
+      <label><input type="radio" name="q79" value="11" onclick="checkAnswer(79, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q79" value="13" onclick="checkAnswer(79, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q79" value="12" onclick="checkAnswer(79, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q79" value="14" onclick="checkAnswer(79, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <div class="feedback" id="feedback79"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(79)">Previous</button>
+        <button type="button" onclick="nextQuestion(79)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q80">
+      <legend>80. What is the square root of 144?</legend>
+      <label><input type="radio" name="q80" value="11"
+          onclick="checkAnswer(80, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <label><input type="radio" name="q80" value="12"
+          onclick="checkAnswer(80, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <label><input type="radio" name="q80" value="13"
+          onclick="checkAnswer(80, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q80" value="10"
+          onclick="checkAnswer(80, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <div class="feedback" id="feedback80"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(80)">Previous</button>
+        <button type="button" onclick="nextQuestion(80)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q81">
+      <legend>81. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q81" value="18"
+          onclick="checkAnswer(81, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q81" value="20"
+          onclick="checkAnswer(81, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <label><input type="radio" name="q81" value="22"
+          onclick="checkAnswer(81, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q81" value="24"
+          onclick="checkAnswer(81, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <div class="feedback" id="feedback81"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(81)">Previous</button>
+        <button type="button" onclick="nextQuestion(81)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q82">
+      <legend>82. What is 15 - 6?</legend>
+      <label><input type="radio" name="q82" value="10" onclick="checkAnswer(82, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q82" value="9" onclick="checkAnswer(82, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <label><input type="radio" name="q82" value="11" onclick="checkAnswer(82, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q82" value="8" onclick="checkAnswer(82, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <div class="feedback" id="feedback82"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(82)">Previous</button>
+        <button type="button" onclick="nextQuestion(82)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q83">
+      <legend>83. What is 7 + 5?</legend>
+      <label><input type="radio" name="q83" value="14" onclick="checkAnswer(83, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q83" value="11" onclick="checkAnswer(83, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q83" value="13" onclick="checkAnswer(83, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q83" value="12" onclick="checkAnswer(83, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <div class="feedback" id="feedback83"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(83)">Previous</button>
+        <button type="button" onclick="nextQuestion(83)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q84">
+      <legend>84. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q84" value="12"
+          onclick="checkAnswer(84, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <label><input type="radio" name="q84" value="10"
+          onclick="checkAnswer(84, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q84" value="14"
+          onclick="checkAnswer(84, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q84" value="16"
+          onclick="checkAnswer(84, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <div class="feedback" id="feedback84"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(84)">Previous</button>
+        <button type="button" onclick="nextQuestion(84)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q85">
+      <legend>85. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q85" value="4"
+          onclick="checkAnswer(85, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <label><input type="radio" name="q85" value="3"
+          onclick="checkAnswer(85, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <label><input type="radio" name="q85" value="2"
+          onclick="checkAnswer(85, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <label><input type="radio" name="q85" value="1"
+          onclick="checkAnswer(85, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <div class="feedback" id="feedback85"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(85)">Previous</button>
+        <button type="button" onclick="nextQuestion(85)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q86">
+      <legend>86. What is 15 - 6?</legend>
+      <label><input type="radio" name="q86" value="9" onclick="checkAnswer(86, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <label><input type="radio" name="q86" value="10" onclick="checkAnswer(86, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <label><input type="radio" name="q86" value="8" onclick="checkAnswer(86, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q86" value="11" onclick="checkAnswer(86, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <div class="feedback" id="feedback86"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(86)">Previous</button>
+        <button type="button" onclick="nextQuestion(86)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q87">
+      <legend>87. What is 9 × 6?</legend>
+      <label><input type="radio" name="q87" value="55" onclick="checkAnswer(87, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <label><input type="radio" name="q87" value="53" onclick="checkAnswer(87, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <label><input type="radio" name="q87" value="56" onclick="checkAnswer(87, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <label><input type="radio" name="q87" value="54" onclick="checkAnswer(87, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <div class="feedback" id="feedback87"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(87)">Previous</button>
+        <button type="button" onclick="nextQuestion(87)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q88">
+      <legend>88. What is the square of 7?</legend>
+      <label><input type="radio" name="q88" value="51" onclick="checkAnswer(88, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <label><input type="radio" name="q88" value="48" onclick="checkAnswer(88, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q88" value="49" onclick="checkAnswer(88, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <label><input type="radio" name="q88" value="50" onclick="checkAnswer(88, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <div class="feedback" id="feedback88"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(88)">Previous</button>
+        <button type="button" onclick="nextQuestion(88)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q89">
+      <legend>89. What is 7 + 5?</legend>
+      <label><input type="radio" name="q89" value="14" onclick="checkAnswer(89, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q89" value="12" onclick="checkAnswer(89, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <label><input type="radio" name="q89" value="11" onclick="checkAnswer(89, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q89" value="13" onclick="checkAnswer(89, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <div class="feedback" id="feedback89"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(89)">Previous</button>
+        <button type="button" onclick="nextQuestion(89)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q90">
+      <legend>90. What is the square root of 144?</legend>
+      <label><input type="radio" name="q90" value="10"
+          onclick="checkAnswer(90, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q90" value="12"
+          onclick="checkAnswer(90, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <label><input type="radio" name="q90" value="11"
+          onclick="checkAnswer(90, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <label><input type="radio" name="q90" value="13"
+          onclick="checkAnswer(90, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <div class="feedback" id="feedback90"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(90)">Previous</button>
+        <button type="button" onclick="nextQuestion(90)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q91">
+      <legend>91. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q91" value="10"
+          onclick="checkAnswer(91, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q91" value="16"
+          onclick="checkAnswer(91, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q91" value="14"
+          onclick="checkAnswer(91, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q91" value="12"
+          onclick="checkAnswer(91, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <div class="feedback" id="feedback91"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(91)">Previous</button>
+        <button type="button" onclick="nextQuestion(91)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q92">
+      <legend>92. What is 36 ÷ 6?</legend>
+      <label><input type="radio" name="q92" value="5" onclick="checkAnswer(92, this.value, '6', `36 ÷ 6 = 6.`)">
+        5</label><br>
+      <label><input type="radio" name="q92" value="7" onclick="checkAnswer(92, this.value, '6', `36 ÷ 6 = 6.`)">
+        7</label><br>
+      <label><input type="radio" name="q92" value="8" onclick="checkAnswer(92, this.value, '6', `36 ÷ 6 = 6.`)">
+        8</label><br>
+      <label><input type="radio" name="q92" value="6" onclick="checkAnswer(92, this.value, '6', `36 ÷ 6 = 6.`)">
+        6</label><br>
+      <div class="feedback" id="feedback92"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(92)">Previous</button>
+        <button type="button" onclick="nextQuestion(92)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q93">
+      <legend>93. What is 9 × 6?</legend>
+      <label><input type="radio" name="q93" value="53" onclick="checkAnswer(93, this.value, '54', `9 × 6 = 54.`)">
+        53</label><br>
+      <label><input type="radio" name="q93" value="54" onclick="checkAnswer(93, this.value, '54', `9 × 6 = 54.`)">
+        54</label><br>
+      <label><input type="radio" name="q93" value="55" onclick="checkAnswer(93, this.value, '54', `9 × 6 = 54.`)">
+        55</label><br>
+      <label><input type="radio" name="q93" value="56" onclick="checkAnswer(93, this.value, '54', `9 × 6 = 54.`)">
+        56</label><br>
+      <div class="feedback" id="feedback93"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(93)">Previous</button>
+        <button type="button" onclick="nextQuestion(93)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q94">
+      <legend>94. What is 15 - 6?</legend>
+      <label><input type="radio" name="q94" value="8" onclick="checkAnswer(94, this.value, '9', `15 - 6 = 9.`)">
+        8</label><br>
+      <label><input type="radio" name="q94" value="11" onclick="checkAnswer(94, this.value, '9', `15 - 6 = 9.`)">
+        11</label><br>
+      <label><input type="radio" name="q94" value="9" onclick="checkAnswer(94, this.value, '9', `15 - 6 = 9.`)">
+        9</label><br>
+      <label><input type="radio" name="q94" value="10" onclick="checkAnswer(94, this.value, '9', `15 - 6 = 9.`)">
+        10</label><br>
+      <div class="feedback" id="feedback94"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(94)">Previous</button>
+        <button type="button" onclick="nextQuestion(94)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q95">
+      <legend>95. Solve: 5x + 3 = 13. What is x?</legend>
+      <label><input type="radio" name="q95" value="1"
+          onclick="checkAnswer(95, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 1</label><br>
+      <label><input type="radio" name="q95" value="2"
+          onclick="checkAnswer(95, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 2</label><br>
+      <label><input type="radio" name="q95" value="4"
+          onclick="checkAnswer(95, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 4</label><br>
+      <label><input type="radio" name="q95" value="3"
+          onclick="checkAnswer(95, this.value, '2', `5x + 3 = 13 → 5x = 10 → x = 2`)"> 3</label><br>
+      <div class="feedback" id="feedback95"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(95)">Previous</button>
+        <button type="button" onclick="nextQuestion(95)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q96">
+      <legend>96. What is the square of 7?</legend>
+      <label><input type="radio" name="q96" value="48" onclick="checkAnswer(96, this.value, '49', `7² = 7 × 7 = 49.`)">
+        48</label><br>
+      <label><input type="radio" name="q96" value="50" onclick="checkAnswer(96, this.value, '49', `7² = 7 × 7 = 49.`)">
+        50</label><br>
+      <label><input type="radio" name="q96" value="51" onclick="checkAnswer(96, this.value, '49', `7² = 7 × 7 = 49.`)">
+        51</label><br>
+      <label><input type="radio" name="q96" value="49" onclick="checkAnswer(96, this.value, '49', `7² = 7 × 7 = 49.`)">
+        49</label><br>
+      <div class="feedback" id="feedback96"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(96)">Previous</button>
+        <button type="button" onclick="nextQuestion(96)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q97">
+      <legend>97. What is 7 + 5?</legend>
+      <label><input type="radio" name="q97" value="14" onclick="checkAnswer(97, this.value, '12', `7 + 5 = 12.`)">
+        14</label><br>
+      <label><input type="radio" name="q97" value="11" onclick="checkAnswer(97, this.value, '12', `7 + 5 = 12.`)">
+        11</label><br>
+      <label><input type="radio" name="q97" value="13" onclick="checkAnswer(97, this.value, '12', `7 + 5 = 12.`)">
+        13</label><br>
+      <label><input type="radio" name="q97" value="12" onclick="checkAnswer(97, this.value, '12', `7 + 5 = 12.`)">
+        12</label><br>
+      <div class="feedback" id="feedback97"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(97)">Previous</button>
+        <button type="button" onclick="nextQuestion(97)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q98">
+      <legend>98. What is the perimeter of a square with side 3?</legend>
+      <label><input type="radio" name="q98" value="14"
+          onclick="checkAnswer(98, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 14</label><br>
+      <label><input type="radio" name="q98" value="16"
+          onclick="checkAnswer(98, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 16</label><br>
+      <label><input type="radio" name="q98" value="10"
+          onclick="checkAnswer(98, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 10</label><br>
+      <label><input type="radio" name="q98" value="12"
+          onclick="checkAnswer(98, this.value, '12', `Perimeter = 4 × side = 4 × 3 = 12.`)"> 12</label><br>
+      <div class="feedback" id="feedback98"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(98)">Previous</button>
+        <button type="button" onclick="nextQuestion(98)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q99">
+      <legend>99. What is the area of a rectangle with length 4 and breadth 5?</legend>
+      <label><input type="radio" name="q99" value="18"
+          onclick="checkAnswer(99, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 18</label><br>
+      <label><input type="radio" name="q99" value="22"
+          onclick="checkAnswer(99, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 22</label><br>
+      <label><input type="radio" name="q99" value="24"
+          onclick="checkAnswer(99, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 24</label><br>
+      <label><input type="radio" name="q99" value="20"
+          onclick="checkAnswer(99, this.value, '20', `Area = length × breadth = 4 × 5 = 20.`)"> 20</label><br>
+      <div class="feedback" id="feedback99"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(99)">Previous</button>
+        <button type="button" onclick="nextQuestion(99)">Next</button>
+      </div>
+    </fieldset>
+
+    <fieldset class="question" id="q100">
+      <legend>100. What is the square root of 144?</legend>
+      <label><input type="radio" name="q100" value="13"
+          onclick="checkAnswer(100, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 13</label><br>
+      <label><input type="radio" name="q100" value="11"
+          onclick="checkAnswer(100, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 11</label><br>
+      <label><input type="radio" name="q100" value="10"
+          onclick="checkAnswer(100, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 10</label><br>
+      <label><input type="radio" name="q100" value="12"
+          onclick="checkAnswer(100, this.value, '12', `√144 = 12 because 12 × 12 = 144.`)"> 12</label><br>
+      <div class="feedback" id="feedback100"></div>
+      <div class="nav-buttons" style="display: flex; justify-content: space-between;">
+        <button type="button" onclick="prevQuestion(100)">Previous</button>
+
+      </div>
+    </fieldset>
+    <button type="submit" style="display:none;" id="submitBtn">Submit</button>
+    <!-- Button to go back to homepage -->
+    <div style="text-align: center; margin-top: 20px;"><a href="../index.html"
+        style="background-color: #003366; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">⬅
+        Back to Homepage</a></div>
+  </form>
+
+  <!-- JavaScript for answer checking and question navigation -->
+  <script>
+    function checkAnswer(qNum, selected, correct, explanation) {
+      const feedback = document.getElementById("feedback" + qNum);
+      if (selected === correct) {
+        feedback.innerHTML = '<span class="correct">Correct!</span><br>' + explanation;
+      } else {
+        feedback.innerHTML = '<span class="incorrect">Incorrect.</span><br>' + explanation;
+      }
+    }
+
+    function nextQuestion(current) {
+      document.getElementById("q" + current).classList.remove("active");
+      document.getElementById("q" + (current + 1)).classList.add("active");
+    }
+
+    function prevQuestion(current) {
+      document.getElementById("q" + current).classList.remove("active");
+      document.getElementById("q" + (current - 1)).classList.add("active");
+    }
+  </script>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-flex">
+      <div class="footer-block">
+        <h3 class="footer-mathverse-heading">MathVerse</h3>
+        <p>Empowering learners through fun,<br /><br /> structured, and comprehensive<br /><br /> math education for all
+          levels.</p>
+      </div>
+      <div class="footer-block">
+        <h3 class="footer-contact-heading">Contact Us</h3>
+        <a href="mailto:contact@mathverse.com">
+          <p>📩 Email: contact@mathverse.com</p>
+        </a>
+        <a href="tel:+91 9284680763">
+          <p>📲 Phone: +91 9284680763</p>
+        </a>
+        <a
+          href="https://www.google.com/maps/place/Nagpur,+Maharashtra/@21.1613263,78.9076932,43220m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bd4c0a5a31faf13:0x19b37d06d0bb3e2b!8m2!3d21.1458004!4d79.0881546!16zL20vMDJjOTht?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D">
+          <p>🏠 Address: Nagpur(MH),India</p>
+        </a>
+      </div>
+      <div class="footer-block">
+        <h3 class="footer-nav-heading">Quick Links</h3>
+        <p><a href="../index.html">Home</a></p>
+        <p><a href="../index.html #about">About</a></p>
+        <p><a href="../pages/syllabus.html">Syllabus</a></p>
+        <p><a href="../pages/quiz.html">Quiz</a></p>
+        <p><a href="../pages/contact.html">Contact</a></p>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MathVerse. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
