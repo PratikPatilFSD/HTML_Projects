@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid practice three</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            
+           
+        }
+       
+        .box {
+            width: 100%;
+            height: 100%;
+            background-color: lightgrey;        
+        }
+        .box1 {
+            width: 100%;
+            height: 100%;
+            background-color: lightpink;
+            grid-row: 1/span 2;        
+        }
+       
+        .box2 {
+            width: 100%;
+            height: 100%;
+            background-color: lightblue;
+           grid-column: 5/span 3;      
+        }
+        .box3 {
+            width: 100%;
+            height: 100%;
+            background-color: lightgoldenrodyellow;
+                
+        }
+</style>
+      
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">Student ID</div>
+        <div class="box1">Student Name</div>
+        <div class="box1">Age</div>
+        <div class="box1">Address</div>
+        <div class="box2">Skills</div>
+        <div class="box3">Programming</div>
+        <div class="box3">Communication</div>
+        <div class="box3">Experience</div>
+        <div class="box">101</div>
+        <div class="box">Pratik</div>
+        <div class="box">22</div>
+        <div class="box">Katol</div>
+        <div class="box">Yes</div>
+        <div class="box">Yes</div>
+        <div class="box">Yes</div>
+        <div class="box">102</div>
+        <div class="box">Rahul</div>
+        <div class="box">21</div>
+        <div class="box">Narkhed</div>
+        <div class="box">Yes</div>
+        <div class="box">Yes</div>
+        <div class="box">Yes</div>
+        <div class="box">103</div>
+        <div class="box">Yogesh</div>
+        <div class="box">23</div>
+        <div class="box">Nagpur</div>
+        <div class="box">Yes</div>
+        <div class="box">Yes</div>
+        <div class="box">Yes</div>
+       
+      
+      
+    </div>
+</body>
+
+</html>
