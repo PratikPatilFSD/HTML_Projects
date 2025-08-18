@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form by CSS</title>
+    <style>
+        /*Univesal selector css*/
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Selection of width and height of body css*/
+        body {
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(to right, blue, violet);
+        }
+
+        /*Registration form container body css*/
+        .registration-container {
+            width: 50%;
+            height: 80%;
+            background-color: white;
+            margin: 25%;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+
+        /*Registration form heading css*/
+        .registration-heading {
+            width: 100%;
+            height: 7%;
+            display: grid;
+            margin-left: 50px;
+        }
+
+        /*Registration form body css*/
+        .registration-body {
+            width: 100%;
+            height: 57%;
+            margin: 50px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        /*Registration form right side labels css*/
+        #label-two {
+            margin-left: 175px;
+        }
+
+        #label-four {
+            margin-left: 207px;
+        }
+
+        #label-six {
+            margin-left: 176px;
+        }
+
+        /*Registration form all inputs css*/
+        input[placeholder="Enter your name"],
+        input[placeholder="Enter your email"],
+        input[placeholder="Enter your password"] {
+            height: 30px;
+            border-radius: 3px;
+        }
+
+        input[placeholder="Enter your username"],
+        input[placeholder="Enter your number"],
+        input[placeholder="Confirm your password"] {
+            margin-left: 70px;
+            height: 30px;
+            border-radius: 3px;
+        }
+
+        /*Registration form gender input css*/
+        input[value="male"] {
+            margin-left: 1px;
+        }
+
+        input[value="female"] {
+            margin-left: 61px;
+        }
+
+        input[value="other"] {
+            margin-left: 65px;
+        }
+
+        /*Registration register button css*/
+        .register-button {
+            width: 430px;
+            height: 6%;
+            background: linear-gradient(to right, blue, violet);
+            border-radius: 5px;
+            margin: 50px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            padding-top: 7px;
+
+        }
+
+        /*Registration register button hover css*/
+        .register-button:hover {
+            background: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Registraion form container-->
+    <div class="registration-container">
+
+        <!--Registraion form heading-->
+        <div class="registration-heading">
+            <h2>Registration</h2>
+        </div>
+
+        <!--Registraion form body-->
+        <div class="registration-body">
+
+            <!--Registraion form all labels and inputs-->
+            <form>
+                <label>Full Name</label>
+                <label id="label-two">Username</label><br>
+
+                <input type="text" placeholder="Enter your name">
+                <input type="text" placeholder="Enter your username"><br /><br />
+
+                <label>Email</label>
+                <label id="label-four">Phone Number</label><br>
+
+                <input type="email" placeholder="Enter your email">
+                <input type="text" placeholder="Enter your number"><br /><br />
+
+                <label>Password</label>
+                <label id="label-six">Confirm Password</label><br>
+
+                <input type="password" placeholder="Enter your password">
+                <input type="password" placeholder="Confirm your password">
+                <br />
+                <br />
+
+                <label>Gender</label>
+                <br /><br />
+                <input type="radio" name="gender" value="male" <label>Male</label>
+                <input type="radio" name="gender" value="female" <label>Female</label>
+                <input type="radio" name="gender" value="other" <label>Prefer not to say</label>
+            </form>
+        </div>
+
+        <!--Registraion form register button-->
+        <div class="register-button">Register</div>
+    </div>
+</body>
+
+</html>
