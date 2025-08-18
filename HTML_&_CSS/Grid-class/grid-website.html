@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shop website</title>
+    <style>
+        /*Website body css*/
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-image: url(../assets/images/mobile-background.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        *{
+            text-decoration: none;}
+
+        html{
+            scroll-behavior: smooth;
+        }  
+        /*Header css*/
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: lightgrey;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /*Header name css*/
+        .header-name {
+
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: blueviolet;
+            padding-top: 2px;
+            padding-right: 200px;
+        }
+
+        /*Header logo css*/
+        .header-logo {
+            width: 40px;
+            height: 35px;
+        }
+
+        /*Header links css*/
+        .header-links {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding-top: 15px;
+            color: rgb(68, 57, 139);
+        }
+
+        /*Shop Information css*/
+        .shop-information {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        /*Shop information text one css*/
+        .box-one {
+            width: 100%;
+            height: 70px;
+            text-align: center;
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: lightcoral;
+            padding-top: 100px;
+        }
+        .box-one:hover{
+            font-size: 60px;
+            color: blueviolet;
+        }
+
+        /*Shop information text two css*/
+        .box-two {
+            width: 100%;
+            height: 430px;
+            padding-top: 50px;
+        }
+
+        .box-two-text {
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.5;
+            color: lightskyblue;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /*Shop image css*/
+        .shop-image {
+            width: 1080px;
+            height: 200px;
+
+        }
+
+        /*Product title css*/
+        .product {
+            width: 100%;
+            height: 60px;
+            background-color: lightslategray;
+            grid-column: 1/span 3;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            padding-top: 30px;
+
+        }
+
+        /*Product cart css*/
+        .product-details {
+            width: 100%;
+            height: auto;
+            background-color: lightgray;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            row-gap: 20px;
+            column-gap: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        /*Each product css*/
+        .box {
+            width: 100%;
+            height: 400px;
+            background-color: white;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 5px 5px 5px;
+        }
+        .box:hover{
+             transform: translateY(-3px);
+        }
+
+        /*About shop title css*/
+        .about-us {
+            width: 100%;
+            height: 60px;
+            background-color: lightslategray;
+            grid-column: 1/span 3;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+
+        /*Shop details css*/
+        .shop-details {
+            width: 100%;
+            height: 600px;
+            background-image: url(../assets/images/mobile-background.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr;
+            text-align: justify;
+            font-size: 20px;
+            line-height: 1.5;
+            color: lightskyblue;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 50px;
+        }
+
+        /*Contact title css*/
+        .contact-title {
+            width: 100%;
+            height: 60px;
+            background-color: lightslategray;
+            grid-column: 1/span 3;
+            text-align: center;
+            font-size: 35px;
+            font-weight: bold;
+            padding-top: 15px;
+        }
+
+        /*Contact details css*/
+        .contact-details {
+            width: 100%;
+            height: 300px;
+            background-color: lightgray;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="header">
+
+        <!--Header Name-->
+        <div class="header-name">
+            <span><img class="header-logo" src="../assets/images/fav-icon.avif">Pratik Mobiles</span>
+        </div>
+
+        <!--Header links-->
+        <div class="header-links">
+            <span><a href="#home">Home</a></span>
+            <span><a href="#products">Products</a></span>
+            <span><a href="#aboutus">About us</a></span>
+            <span><a href="#contact">Contact</a></span>
+        </div>
+    </div>
+    <!--Shop Information page-->
+    <div class="shop-informarion" id="home">
+        <div class="box-one">Welcome to Pratik Mobiles</div>
+        <div class="box-two">
+            <p class="box-two-text">Pratik Mobiles gives you a chance to quickly and easily find the device you want and
+                have it delivered to
+                your home in no time, regardless of your location, as long as it is in one of the states of the India.We
+                have been in the business for quite a while now, and in that time we have not only managed to make close
+                relationships with numerous partners, but also to recognize what people need. At Pratik Mobiles shop you
+                will
+                find quality products from top brands at consistently low prices. We are offering a wide range of
+                smartphones and tablets, notebooks and computer equipment, headsets and smartwatches, small household
+                appliances and other electronics. Intelligent filter options and complete product information help
+                customers to find exactly the products that suit them.
+            </p>
+             <!--Shop Image-->
+            <img class="shop-image" src="../assets/images/mobile-shop.jpeg">
+        </div>
+    </div>
+
+    <!--Product Title-->
+    <div class="product" id="products">Our Products</div>
+
+    <!--Product details-->
+    <div class="product-details">
+
+        <!--Product card-->
+
+        <!--Product one-->
+        <div class="box">
+            <img src="../assets/images/iQOO Neo.jpg" width="250px">
+            <h3>iQOO Neo 10R</h3>
+            <h4>₹26,998</h4>
+            <p>iQOO Neo 10R 5G (Raging Blue, 8GB RAM, 128GB Storage) </p>
+        </div>
+
+        <!--Product two-->
+        <div class="box">
+            <img src="../assets/images/OnePlus 13R.jpg" width="250px">
+            <h3>OnePlus 13R</h3>
+            <h4>₹42,998</h4>
+            <p>OnePlus 13R | Smarter with OnePlus AI (12GB RAM, 256GB Storage Nebula Noir)</p>
+        </div>
+
+        <!--Product three-->
+        <div class="box">
+            <img src="../assets/images/realme NARZO 70 Turbo.jpg" width="250px">
+            <h3>realme NARZO 70 Turbo</h3>
+            <h4>₹16,998</h4>
+            <p>realme NARZO 70 Turbo 5G (Turbo Green,6GB RAM,128GB Storage)</p>
+        </div>
+
+        <!--Product four-->
+        <div class="box">
+            <img src="../assets/images/Redmi A4 5G.jpg" width="250px">
+            <h3>Redmi A4 5G</h3>
+            <h4>₹8,299</h4>
+            <p>Redmi A4 5G (Starry Black, 4GB RAM, 64GB Storage) </p>
+        </div>
+
+        <!--Product five-->
+        <div class="box">
+            <img src="../assets/images/OnePlus 13.jpg" width="250px">
+            <h3>OnePlus 13</h3>
+            <h4>₹76,998</h4>
+            <p>OnePlus 13 | Smarter with OnePlus AI (16GB RAM, 512GB Storage Arctic Dawn)</p>
+        </div>
+
+        <!--Product six-->
+        <div class="box">
+            <img src="../assets/images/bluetooth-speaker.jpg" width="250px">
+            <h3>Bluetooth Speaker</h3>
+            <h4>₹1,599</h4>
+            <p>boAt Stone 352 Pro Bluetooth Speaker w/ 14W Signature Sound</p>
+        </div>
+
+        <!--Product seven-->
+        <div class="box">
+            <img src="../assets/images/smartwatch.jpg" width="250px">
+            <h3>Smart Watch</h3>
+            <h4>₹1,299</h4>
+            <p>Fire-Boltt Ninja Call Pro Max Smart Watch </p>
+        </div>
+
+        <!--Product eight-->
+        <div class="box">
+            <img src="../assets/images/PowerBank.jpg" width="250px">
+            <h3>Power Bank</h3>
+            <h4>₹1,179</h4>
+            <p>LAPCARE Bolt Pro 20000Mah Transparent Power Bank</p>
+        </div>
+
+        <!--Product nine-->
+        <div class="box">
+            <img src="../assets/images/connector.jpg" width="240px">
+            <h3>C Type Connector</h3>
+            <h4>₹209</h4>
+            <p>Portronics iKonnect C Pro Type C to 3.5 mm Audio Jack Connector with DAC Headphone Converter</p>
+        </div>
+    </div>
+    <!--Product Title-->
+    <div class="about-us" id="aboutus">About us</div>
+
+    <!--Shop Details-->
+    <div class="shop-details">
+        <b>What we sell:</b>
+        <ul>
+            <li><b>Mobile Phones:</b> We offer a variety of brands and models of smartphones.</li>
+            <li><b>Accessories:</b> This includes cases, screen protectors, chargers, headphones, and more.</li>
+            <li><b>SIM Cards and Data Plans:</b> We often offer services to activate new SIM cards and provide mobile
+                data plans.</li>
+            <li><b>Other Services:</b> We also offer repairs, unlocking, or software updates. </li>
+        </ul>
+        <b>Key Features:</b>
+        <ul>
+            <li><b>Wide Selection:</b> We aim to provide a diverse range of mobile phones and accessories to cater to
+                different needs and budgets. </li>
+            <li><b>Customer Service:</b> We have knowledgeable staff who can help customers choose the right phone or
+                plan. </li>
+            <li><b>Convenience:</b> We offer a physical location where customers can see, compare, and purchase products
+                in person. </li>
+            <li><b>Mobile Commerce:</b> Our shop can also offer a mobile shopping experience through app or mobile
+                optimized website. </li>
+    </div>
+
+    <!--Contact Title-->
+    <div class="contact-title" id="contact">Contact</div>
+
+    <!--Contact details-->
+    <div class="contact-details">
+        <h3>Pratik Mobiles</h3> <br />
+        <b>Phone: </b><a href="tel:+91 9284680763">+91 9284680763</a> <br />
+        <b>Email: </b><a href="mailto:pripat2610@gmail.com">pripat2610@gmail.com</a> <br>
+        <b>Location: </b>Tar Bazar, Katol-441302<br /><br />
+        <p>
+        <h2>Thank You.Visit Again</h2><img src="../assets/images/namaste.png" width="50px">
+        </p>
+
+    </div>
+</body>
+
+</html>

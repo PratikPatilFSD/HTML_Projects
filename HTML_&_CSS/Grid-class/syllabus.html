@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maths Syllabus - Class 1 to 12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        header {
+            background-color: #2b6cb0;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            padding: 1rem;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .class-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .class-buttons button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3182ce;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .class-buttons button:hover {
+            background-color: #2c5282;
+        }
+
+        .syllabus {
+            display: none;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #e2e8f0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mathematics Syllabus CBSE (Class 1 to 12)</h1>
+    </header>
+
+    <div class="container">
+        <div class="class-buttons">
+            <!-- Buttons for classes -->
+            <script>
+                for (let i = 1; i <= 12; i++) {
+                    document.write(`<button onclick="showSyllabus(${i})">Class ${i}</button>`);
+                }
+            </script>
+        </div>
+
+        <!-- Syllabus Sections -->
+        <div id="syllabus-content">
+            <div id="class-1" class="syllabus">
+                <h2>Class 1 Syllabus</h2>
+                <ul>
+                    <li>Finding the Furry Cat! (Pre-number Concepts)</li>
+                    <li>What is Long? What is Round? (Shapes)</li>
+                    <li>Mango Treat (Numbers 1 to 9)</li>
+                    <li>Making 10 (Numbers 10 to 20)</li>
+                    <li>How Many? (Addition and Subtraction ofSingle Digit Numbers)</li>
+                    <li>Vegetable Farm (Addition and Subtraction up to 20)</li>
+                    <li>Lina’s Family (Measurement)</li>
+                    <li>Fun with Numbers (Numbers 21 to 99)</li>
+                    <li>Utsav (Patterns)</li>
+                    <li>How do I Spend my Day? (Time)</li>
+                    <li>How Many Times? (Multiplication)</li>
+                    <li>How Much Can We Spend? (Money)</li>
+                    <li>So Many Toys (Data Handling)</li>
+                    <li>Puzzles</li>
+                </ul>
+            </div>
+
+            <div id="class-2" class="syllabus">
+                <h2>Class 2 Syllabus</h2>
+                <ul>
+                    <li>A Day at the Beach (Counting in Groups)</li>
+                    <li>Shapes Around Us (3D Shapes)</li>
+                    <li>Fun with Numbers (Numbers 1 to 100)</li>
+                    <li>Shadow Story (Togalu) (2D Shapes)</li>
+                    <li>Playing with Lines (Orientations of a line)</li>
+                    <li>Decoration for Festival (Addition and Subtraction)</li>
+                    <li>Rani’s Gift (Measurement)</li>
+                    <li>Grouping and Sharing (Multiplication and Division)</li>
+                    <li>Which Season is it? (Measurement of Time)</li>
+                    <li>Fun at the Fair (Money)</li>
+                    <li>Data Handling</li>
+                    <li>Puzzles</li>
+                </ul>
+            </div>
+
+            <div id="class-3" class="syllabus">
+                <h2>Class 3 Syllabus</h2>
+                <ul>
+                    <li>What’s in a Name? </li>
+                    <li>Toy Joy</li>
+                    <li>Double Century</li>
+                    <li>Vacation with My Nani Maa</li>
+                    <li>Fun with Shapes </li>
+                    <li>House of Hundreds - I</li>
+                    <li>Raksha Bandhan</li>
+                    <li>Fair Share </li>
+                    <li>House of Hundreds - II</li>
+                    <li>Fun at Class Party! </li>
+                    <li>Filling and Lifting </li>
+                    <li>Give and Take</li>
+                    <li>Time Goes On</li>
+                    <li>The Surajkund Fair</li>
+                    <li>Learning Material Sheets</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 My Maths Learning Website
+    </footer>
+
+    <script>
+        function showSyllabus(classNum) {
+            const all = document.querySelectorAll('.syllabus');
+            all.forEach(div => div.style.display = 'none');
+            const target = document.getElementById(`class-${classNum}`);
+            if (target) target.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

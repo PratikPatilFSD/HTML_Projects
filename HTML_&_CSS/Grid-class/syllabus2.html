@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Math Syllabus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f6f8;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card summary {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #0077cc;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    .card summary::marker {
+      display: none;
+    }
+
+    details ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    details li {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Math Syllabus (Grade 1 to Engineering)</h1>
+
+  <div class="grid-container">
+
+    <!-- Grade 1 -->
+    <div class="card">
+      <details>
+        <summary>Grade 1</summary>
+        <ul>
+          <li>Numbers up to 100</li>
+          <li>Basic Addition and Subtraction</li>
+          <li>Shapes and Patterns</li>
+          <li>Measurement (Length, Weight)</li>
+          <li>Time and Calendar</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Grade 2 -->
+    <div class="card">
+      <details>
+        <summary>Grade 2</summary>
+        <ul>
+          <li>Numbers up to 1000</li>
+          <li>Advanced Addition/Subtraction</li>
+          <li>Introduction to Multiplication</li>
+          <li>Money and Time</li>
+          <li>Basic Geometry</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Grade 3 -->
+    <div class="card">
+      <details>
+        <summary>Grade 3</summary>
+        <ul>
+          <li>Place Value</li>
+          <li>Multiplication & Division</li>
+          <li>Fractions</li>
+          <li>Measurement & Data</li>
+          <li>Perimeter & Area</li>
+        </ul>
+      </details>
+    </div>
+
+    <!-- Repeat for Grade 4 to Engineering... -->
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    body {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+    }
+
+    .back-button {
+      margin-bottom: 20px;
+    }
+
+    .back-button input {
+      width: 220px;
+      height: 40px;
+      background-color: #444;
+      border: 2px solid white;
+      color: white;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .back-button input:hover {
+      background-color: green;
+      color: white;
+      border-color: #fff;
+    }
+
+    .product {
+      width: 300px;
+      text-align: center;
+      margin-left: 550px;
+      background-color: #ffeb3b;
+      color: #000;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 40px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .box {
+      background-color: #393E46;
+      border: 2px solid yellow;
+      border-radius: 10px;
+      width: 300px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+
+    .box:hover {
+      border: 4px solid white;
+      transform: translateY(-5px);
+    }
+
+    .box img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 2px solid #ccc;
+    }
+
+    .box-text-main {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+    }
+
+    .box-text {
+      background-color: yellow;
+      color: black;
+      padding: 8px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .box-text:hover {
+      background-color: green;
+      color: white;
+      border: 1px solid white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Back Button -->
+  <div class="back-button">
+    <a href="../index.html #project">
+      <input type="button" value="⬅ Back to Projects Section" />
+    </a>
+  </div>
+
+  <!-- Heading -->
+  <div class="product">My HTML Projects</div>
+
+  <!-- Project Cards -->
+  <div class="main-container">
+
+    <!-- Repeat this block for each project -->
+    <div class="box">
+      <img src="../assets/images/top-influencers.jpg" alt="Top Influencers">
+      <div class="box-text-main">
+        <a href="../top-influencers.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/top-influencers.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/sign-up-form.png" alt="Signup Form">
+      <div class="box-text-main">
+        <a href="../signup-form.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/signup-form.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/HTML-Form.jpg" alt="HTML Form">
+      <div class="box-text-main">
+        <a href="../assignment-form.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/assignment-form.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/cpu components.jpg" alt="CPU Components">
+      <div class="box-text-main">
+        <a href="../table-tags/cpu-components.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/table-tags/cpu-components.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/report-card.jpg" alt="Report Card">
+      <div class="box-text-main">
+        <a href="../table-tags/report-card.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/table-tags/report-card.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/student-data.webp" alt="Student Data">
+      <div class="box-text-main">
+        <a href="../table-tags/college-student-data.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/table-tags/student-data.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/calculator.jpg" alt="Calculator">
+      <div class="box-text-main">
+        <a href="../table-tags/css-calculator.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/table-tags/css-calculator.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/chessboard.jpg" alt="Chessboard">
+      <div class="box-text-main">
+        <a href="../table-tags/css-chess.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/table-tags/css-chess.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="../assets/images/calender.jpg" alt="Calendar Page">
+      <div class="box-text-main">
+        <a href="../table-tags/table-calender-page.html">
+          <div class="box-text">View Project</div>
+        </a>
+        <a href="https://github.com/PratikPatilFSD/HTML_Projects/blob/main/table-tags/table-calender-page.html">
+          <div class="box-text">View Code</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

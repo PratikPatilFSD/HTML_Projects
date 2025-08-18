@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid template area</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "aside section section"
+                "aside div div"
+                "footer footer footer";
+        }
+
+        header {
+            grid-area: header;
+            width: 100%;
+            height: 100%;
+            background-color: blueviolet;
+        }
+
+        aside {
+            grid-area: aside;
+            width: 100%;
+            height: 100%;
+            background-color: aqua;
+        }
+
+        section {
+            grid-area: section;
+            width: 100%;
+            height: 100%;
+            background-color: lightcoral;
+        }
+
+        div {
+            grid-area: div;
+            width: 100%;
+            height: 100%;
+            background-color: lightgreen;
+        }
+
+        footer {
+            grid-area: footer;
+            width: 100%;
+            height: 100%;
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <header></header>
+        <aside></aside>
+        <section></section>
+        <div></div>
+        <footer></footer>
+    </div>
+
+</body>
+
+</html>
