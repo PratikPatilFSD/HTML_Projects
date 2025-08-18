@@ -1,0 +1,287 @@
+ /* ================== Global Reset & Defaults ================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      list-style: none;
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #222;
+      color: #fff;
+    }
+
+    /* ================== Typography ================== */
+    h1 {
+      font-size: 36px;
+      color: orange;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    /* ================== Section Layout ================== */
+    section {
+      padding: 80px 5%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    /* ================== Header / Navigation ================== */
+    header {
+      width: 100%;
+      background: linear-gradient(to right, darkblue, black);
+      padding: 20px 5%;
+      color: orange;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      gap: 35px;
+    }
+
+    nav a {
+      color: orange;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    /* ================== Home Section ================== */
+    .home {
+      text-align: center;
+      padding-top: 140px;
+    }
+
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 5px solid orange;
+      margin-bottom: 25px;
+    }
+
+    .home-text-connect {
+      margin-top: 30px;
+      font-size: 21px;
+    }
+
+    .icons {
+      margin-top: 25px;
+    }
+
+    .icons a {
+      font-size: 32px;
+      color: orange;
+      margin: 0 15px;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .icons a:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+
+    /* ================== About Section ================== */
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      line-height: 2.4;
+      text-align: justify;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      padding: 5px 20px;
+      background-color: orange;
+      color: #000;
+      border-radius: 5px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .resume-btn:hover {
+      background-color: white;
+      transform: scale(1.05);
+    }
+
+    /* ================== Skills Section ================== */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .skill-card {
+      background-color: #393E46;
+      border: 2px solid orange;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .skill-card:hover {
+      border-color: white;
+      color: orange;
+      transform: scale(1.05);
+    }
+
+    .skill-card img {
+      width: 100px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    /* ================== Projects Section ================== */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background-color: #393E46;
+      border: 2px solid orange;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      border-color: white;
+      color: orange;
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .project-card h3 {
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    /* ================== Contact Section ================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .contact-box {
+      background-color: #333;
+      padding: 20px;
+      border: 2px solid orange;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .contact-box:hover {
+      border-color: white;
+      color: orange;
+      transform: scale(1.05);
+    }
+
+    .contact-box i {
+      font-size: 32px;
+      color: orange;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p a {
+      color: white;
+      display: block;
+      margin-top: 8px;
+    }
+
+    .contact-box p a:hover {
+      color: orange;
+    }
+
+    /* ================== Footer Section ================== */
+    footer {
+      background-color: darkslategray;
+      text-align: center;
+      padding: 30px 20px;
+      color: white;
+    }
+
+    .footer-nav a {
+      display: block;
+      margin: 6px 0;
+      color: orange;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    .footer-nav a:hover {
+      color: white;
+    }
+
+    .footer-icons a {
+      color: orange;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .footer-icons a:hover {
+      color: white;
+      transform: scale(1.2);
+    }
+
+    /* ================== Scroll To Top Button ================== */
+    #scrollTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: orange;
+      color: #000;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 999;
+      transition: background-color 0.3s ease, transform 0.3s;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: white;
+      transform: scale(1.2);
+    }
